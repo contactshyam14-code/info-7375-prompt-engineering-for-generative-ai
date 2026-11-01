@@ -68,7 +68,7 @@ The seeded run 1 is **constructed**: the live response minus its 5 most recently
 Decision recorded in code (`agent.STRIP_HTML`): HTML in `content` is unescaped and stripped before matching.
 
 ## Sign-off — Job-Search Agent 1
-_Draft by Claude, facts only. Edit, then sign or withhold._
+_Facts drafted by Claude; signed by the student (see the last line)._
 
 **Checked**
 - Rule verdicts on 10 constructed postings, including the word-boundary traps: `test_each_id_gets_its_own_verdict`, `test_word_boundary_traps`
@@ -92,7 +92,7 @@ _Draft by Claude, facts only. Edit, then sign or withhold._
 - That Claude's verdict is a fact, or that it agreeing with the rule makes either one correct
 - Anything beyond one board (Formlabs) and one fictional persona. Some Formlabs postings are not in English (e.g. 8220243, Italian), and the rule's English keywords cannot match them.
 
-**Signed or withheld:** ____________ (name, date)
+**Signed or withheld:** Signed, Shyam Sundar Jayaraman Gopalakrishnan, 2026-10-31. Signed as a partial submission: hand labels, prompt revision and a second live day are listed above as not checked. Signature line typed by Claude at my instruction.
 
 ## Driver's seat
 _Draft; confirm against what actually happened._

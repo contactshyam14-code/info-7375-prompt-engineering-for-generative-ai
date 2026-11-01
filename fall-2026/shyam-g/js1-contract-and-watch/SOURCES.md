@@ -14,7 +14,7 @@
   Formlabs, strip HTML, and use the CLI instead of an API key.
 - Hand labels and the labeling rule: **not completed** by the deadline. Claude did not fill them in.
 - The choice of the one prompt revision: **not made** (it depends on the labels).
-- The sign-off signature: _student_.
+- The decision to sign the sign-off (2026-10-31, 23:28). The signature line itself was typed by Claude at my instruction.
 
 ## What Claude (Claude Code, Opus 5.5) contributed
 - `agent.py`, `study.py`, `allowlist.txt`, `prompts/baseline.txt`, `tests/test_extra.py`, written

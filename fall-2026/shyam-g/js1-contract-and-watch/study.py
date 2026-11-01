@@ -16,7 +16,7 @@ import agent
 ROOT = agent.ROOT
 LABELS = ROOT / "labels" / "hand_labels.csv"
 RESULTS = ROOT / "results"
-RESUME = json.loads((ROOT / "persona" / "jordan_rivera.json").read_text(encoding="utf-8"))
+RESUME = agent.validate_resume(json.loads((ROOT / "persona" / "jordan_rivera.json").read_text(encoding="utf-8")))
 
 
 def postings_from(raw_path: str) -> dict[str, dict]:

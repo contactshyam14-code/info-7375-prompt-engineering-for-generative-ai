@@ -34,6 +34,26 @@ CLAUDE_KEYS = {"posting_id", "verdict", "resume_fields", "posting_fields", "just
 MIN_SKILLS = 2
 
 
+# ---------- résumé validation (fictional persona only) ----------
+
+def validate_resume(resume: dict) -> dict:
+    """Reject a résumé the rule cannot use, or one that looks real (CONTRACT sections 1 and 3)."""
+    if not isinstance(resume, dict):
+        raise ValueError("résumé must be a JSON object")
+    for key in RESUME_FIELDS:
+        vals = resume.get(key)
+        if not isinstance(vals, list) or not all(isinstance(v, str) and v.strip() for v in vals):
+            raise ValueError(f"résumé.{key} must be a list of non-empty strings")
+    for key in ("target_titles", "skills", "locations"):
+        if not resume[key]:
+            raise ValueError(f"résumé.{key} is empty; the rule can never match")
+    if not str(resume.get("email", "")).lower().endswith("@example.com"):
+        raise ValueError("refused: email is not @example.com, so this may be a real résumé")
+    if "555" not in re.sub(r"\D", "", str(resume.get("phone", ""))):
+        raise ValueError("refused: phone is not a 555 number, so this may be a real résumé")
+    return resume
+
+
 # ---------- fetching (allow-list enforced) ----------
 
 def allowlist() -> set[str]:
@@ -188,7 +208,7 @@ def run(board: str, from_file: str | None, label: str, use_claude: bool, resume_
         model: str | None = None, state: pathlib.Path = STATE) -> dict:
     run_at = dt.datetime.now().astimezone().isoformat(timespec="seconds")
     stamp = run_at[:19].replace(":", "")
-    resume = json.loads(pathlib.Path(resume_path).read_text(encoding="utf-8"))
+    resume = validate_resume(json.loads(pathlib.Path(resume_path).read_text(encoding="utf-8")))
 
     if from_file:
         body = pathlib.Path(from_file).read_bytes()

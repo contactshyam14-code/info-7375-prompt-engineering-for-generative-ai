@@ -103,3 +103,6 @@ did not change except where it was left undecided.
 2. HTML decision made: stripped before matching (was "DECIDE").
 3. Claude access: the Claude Code CLI replaces "an Anthropic API key in
    an environment variable". Each call is a fresh, tool-less conversation.
+4. Résumé validation added: `agent.validate_resume` refuses a résumé
+   missing a rule field, or whose email is not @example.com or phone is
+   not a 555 number, before any fetch (`tests/test_resume.py`).

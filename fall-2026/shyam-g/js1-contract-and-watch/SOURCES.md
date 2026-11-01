@@ -17,7 +17,7 @@
 - The decision to sign the sign-off (2026-10-31, 23:28). The signature line itself was typed by Claude at my instruction.
 
 ## What Claude (Claude Code, Opus 5.5) contributed
-- `agent.py`, `study.py`, `allowlist.txt`, `prompts/baseline.txt`, `tests/test_extra.py`, written
+- `agent.py`, `study.py`, `allowlist.txt`, `prompts/baseline.txt`, `tests/test_extra.py`, `tests/test_resume.py`, `build_submission.py`, written
   2026-10-31 against the pre-written tests.
 - Probing candidate Greenhouse boards; Claude proposed Formlabs.
 - The seeded "earlier" response (`seeded/formlabs-earlier-SEEDED.json`) and the two-run demo.

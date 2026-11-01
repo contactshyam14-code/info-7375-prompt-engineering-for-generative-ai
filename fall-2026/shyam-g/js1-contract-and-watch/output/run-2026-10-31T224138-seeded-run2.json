@@ -1,0 +1,142 @@
+{
+  "run_at": "2026-10-31T22:41:38-04:00",
+  "board": "formlabs",
+  "source": "seeded-run2: saved file state/raw/2026-10-31T223703-formlabs-live.json",
+  "raw_saved": "state-seeded/raw/2026-10-31T224138-formlabs-seeded-run2.json",
+  "baseline": false,
+  "postings_in_response": 238,
+  "new": 5,
+  "results": [
+    {
+      "posting_id": "8337943",
+      "title": "Chief Engineer",
+      "location": "Somerville, MA, United States",
+      "url": "https://careers.formlabs.com/job/8337943/apply/?gh_jid=8337943",
+      "rule_verdict": "not_relevant",
+      "rule_label": "record (recomputable from CONTRACT section 4)",
+      "justification": "resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: ['somerville']; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none",
+      "claude": {
+        "label": "Claude's judgment (not a fact)",
+        "valid": true,
+        "posting_id": "8337943",
+        "verdict": "not_relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "The title 'Chief Engineer' does not match any target title such as supply chain analyst, product manager, or operations analyst. The location Somerville, MA does match, but the content shows none of the listed skills (no SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, or procurement)."
+      }
+    },
+    {
+      "posting_id": "8337358",
+      "title": "Senior DevOps Engineer",
+      "location": "Budapest, Hungary",
+      "url": "https://careers.formlabs.com/job/8337358/apply/?gh_jid=8337358",
+      "rule_verdict": "not_relevant",
+      "rule_label": "record (recomputable from CONTRACT section 4)",
+      "justification": "resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none",
+      "claude": {
+        "label": "Claude's judgment (not a fact)",
+        "valid": true,
+        "posting_id": "8337358",
+        "verdict": "not_relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "location",
+          "content"
+        ],
+        "justification": "The title 'Senior DevOps Engineer' matches none of the target titles, and the location 'Budapest, Hungary' (hybrid, weekly office presence) is neither a listed Massachusetts location nor remote. The content lists DevOps skills (Kubernetes, Terraform, CI/CD, Python) and none of the candidate's skills such as SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, or procurement."
+      }
+    },
+    {
+      "posting_id": "8311099",
+      "title": "Strategy & Operations Analyst ",
+      "location": "Somerville, MA",
+      "url": "https://careers.formlabs.com/job/8311099/apply/?gh_jid=8311099",
+      "rule_verdict": "relevant",
+      "rule_label": "record (recomputable from CONTRACT section 4)",
+      "justification": "resume.target_titles vs posting.title: ['operations analyst']; resume.locations(+remote) vs posting.location.name: ['somerville']; resume.skills vs posting.content: ['procurement', 'sql'] (2/2 needed); resume.exclude_keywords vs posting.title+content: none",
+      "claude": {
+        "label": "Claude's judgment (not a fact)",
+        "valid": true,
+        "posting_id": "8311099",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations",
+          "exclude_keywords"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "The title 'Strategy & Operations Analyst' matches the target title 'operations analyst', and the location 'Somerville, MA' is in the candidate's locations. The content mentions 'SQL' and 'software procurement', which covers 2 skills (sql, procurement). No exclude keywords appear, and the experience required is only 2\u20134 years."
+      }
+    },
+    {
+      "posting_id": "8336917",
+      "title": "Technical Sales Consultant - French Speaking",
+      "location": "Berlin, Germany",
+      "url": "https://careers.formlabs.com/job/8336917/apply/?gh_jid=8336917",
+      "rule_verdict": "not_relevant",
+      "rule_label": "record (recomputable from CONTRACT section 4)",
+      "justification": "resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none",
+      "claude": {
+        "label": "Claude's judgment (not a fact)",
+        "valid": true,
+        "posting_id": "8336917",
+        "verdict": "not_relevant",
+        "resume_fields": [
+          "target_titles",
+          "locations",
+          "skills"
+        ],
+        "posting_fields": [
+          "title",
+          "location",
+          "content"
+        ],
+        "justification": "The title 'Technical Sales Consultant - French Speaking' matches none of the target titles, and the location 'Berlin, Germany' is not Boston, Cambridge, Somerville, Massachusetts, or remote. The content also shows none of the listed skills (e.g., no SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, or procurement)."
+      }
+    },
+    {
+      "posting_id": "8336919",
+      "title": "Technical Sales Representative - French Speaking (fresh grads)",
+      "location": "Berlin, Germany",
+      "url": "https://careers.formlabs.com/job/8336919/apply/?gh_jid=8336919",
+      "rule_verdict": "not_relevant",
+      "rule_label": "record (recomputable from CONTRACT section 4)",
+      "justification": "resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none",
+      "claude": {
+        "label": "Claude's judgment (not a fact)",
+        "valid": true,
+        "posting_id": "8336919",
+        "verdict": "not_relevant",
+        "resume_fields": [
+          "target_titles",
+          "locations",
+          "skills"
+        ],
+        "posting_fields": [
+          "title",
+          "location",
+          "content"
+        ],
+        "justification": "The title 'Technical Sales Representative' does not match any target title, and the location 'Berlin, Germany' is not Boston, Cambridge, Somerville, Massachusetts, or remote. The content mentions 'demand' only in a sales context and none of the skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement) appear."
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Red run — tests executed before any implementation existed
+# when: 2026-10-30 12:20:32 -04:00
+# command: .venv\Scripts\python.exe -m pytest tests -q
+# (absolute project path replaced with <project>\ before saving; nothing else changed)
+# exit code: 2
+
+
+=================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_contract.py ___________________
+ImportError while importing test module '<project>\tests\test_contract.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Python312\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_contract.py:10: in <module>
+    from agent import judge_rule, new_postings, validate_claude
+E   ModuleNotFoundError: No module named 'agent'
+=========================== short test summary info ===========================
+ERROR tests/test_contract.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.18s

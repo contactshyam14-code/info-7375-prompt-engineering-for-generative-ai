@@ -1,0 +1,28 @@
+# SEEDED two-run demo, 2026-10-31T22:41:38-04:00. Run 1 uses a CONSTRUCTED 'earlier' response (seeded/formlabs-earlier-SEEDED.json = live response minus its 5 newest postings). Run 2 uses the real live response saved 2026-10-31 22:37. Separate state folder: state-seeded/.
+$ python agent.py run --board formlabs --from-file seeded/formlabs-earlier-SEEDED.json --label seeded-run1 --state state-seeded
+2026-10-31T22:41:38-04:00  board=formlabs  seeded-run1: saved file seeded/formlabs-earlier-SEEDED.json
+raw saved: state-seeded/raw/2026-10-31T224138-formlabs-seeded-run1.json  postings: 233  baseline: True  new: 0
+
+$ python agent.py run --board formlabs --from-file state/raw/2026-10-31T223703-formlabs-live.json --label seeded-run2 --state state-seeded --claude
+2026-10-31T22:41:38-04:00  board=formlabs  seeded-run2: saved file state/raw/2026-10-31T223703-formlabs-live.json
+raw saved: state-seeded/raw/2026-10-31T224138-formlabs-seeded-run2.json  postings: 238  baseline: False  new: 5
+  [8337943] Chief Engineer | Somerville, MA, United States
+    RULE (record): not_relevant
+    CLAUDE (judgment, not fact): not_relevant
+    why: resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: ['somerville']; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none
+  [8337358] Senior DevOps Engineer | Budapest, Hungary
+    RULE (record): not_relevant
+    CLAUDE (judgment, not fact): not_relevant
+    why: resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none
+  [8311099] Strategy & Operations Analyst  | Somerville, MA
+    RULE (record): relevant
+    CLAUDE (judgment, not fact): relevant
+    why: resume.target_titles vs posting.title: ['operations analyst']; resume.locations(+remote) vs posting.location.name: ['somerville']; resume.skills vs posting.content: ['procurement', 'sql'] (2/2 needed); resume.exclude_keywords vs posting.title+content: none
+  [8336917] Technical Sales Consultant - French Speaking | Berlin, Germany
+    RULE (record): not_relevant
+    CLAUDE (judgment, not fact): not_relevant
+    why: resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none
+  [8336919] Technical Sales Representative - French Speaking (fresh grads) | Berlin, Germany
+    RULE (record): not_relevant
+    CLAUDE (judgment, not fact): not_relevant
+    why: resume.target_titles vs posting.title: no match; resume.locations(+remote) vs posting.location.name: no match; resume.skills vs posting.content: none (0/2 needed); resume.exclude_keywords vs posting.title+content: none

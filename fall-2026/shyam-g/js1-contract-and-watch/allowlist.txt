@@ -1,0 +1,2 @@
+# Hosts the agent may fetch. Anything else is refused (CONTRACT section 3).
+boards-api.greenhouse.io

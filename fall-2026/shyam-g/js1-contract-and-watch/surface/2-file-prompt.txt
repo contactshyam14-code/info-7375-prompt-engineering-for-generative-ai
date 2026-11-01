@@ -1,0 +1,47 @@
+You judge whether one job posting is relevant to a candidate profile.
+
+Candidate profile (fictional):
+{
+  "target_titles": [
+    "supply chain analyst",
+    "supply chain strategy",
+    "procurement analyst",
+    "demand planner",
+    "project manager",
+    "product manager",
+    "operations analyst"
+  ],
+  "skills": [
+    "sql",
+    "power bi",
+    "sap",
+    "mrp",
+    "forecasting",
+    "inventory",
+    "excel",
+    "procurement"
+  ],
+  "locations": [
+    "boston",
+    "cambridge",
+    "somerville",
+    "massachusetts"
+  ],
+  "exclude_keywords": [
+    "director",
+    "vp",
+    "principal",
+    "senior manager",
+    "10+ years",
+    "8+ years",
+    "phd required"
+  ]
+}
+
+Posting:
+(read it from the file surface/posting-8311099.json)
+
+A posting is relevant only if the title fits one of target_titles, the location is one of locations or remote, the content shows at least 2 of the skills, and no exclude_keywords appear.
+
+Reply with JSON only. No prose, no code fences. Exactly these keys:
+{"posting_id": "<the posting_id above>", "verdict": "relevant" or "not_relevant", "resume_fields": [names from: target_titles, skills, locations, exclude_keywords], "posting_fields": [names from: title, content, location], "justification": "<one to three sentences naming the specific terms behind the verdict>"}

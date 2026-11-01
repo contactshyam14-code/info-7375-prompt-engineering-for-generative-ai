@@ -1,0 +1,42 @@
+{
+  "1001": {
+    "verdict": "relevant",
+    "why": "title ok; boston; skills sql, power bi, inventory, forecasting; no exclusions"
+  },
+  "1002": {
+    "verdict": "not_relevant",
+    "why": "LOCATION: 'germany' contains 'ma' as a substring; word-boundary rule must still reject"
+  },
+  "1003": {
+    "verdict": "relevant",
+    "why": "title ok; remote; skills forecasting, sap, excel"
+  },
+  "1004": {
+    "verdict": "not_relevant",
+    "why": "SKILLS: only 1 distinct skill (excel)"
+  },
+  "1005": {
+    "verdict": "not_relevant",
+    "why": "EXCLUSION: 'director' in title"
+  },
+  "1006": {
+    "verdict": "not_relevant",
+    "why": "TITLE: no target title"
+  },
+  "1007": {
+    "verdict": "not_relevant",
+    "why": "EXCLUSION: '10+ years' in content"
+  },
+  "1008": {
+    "verdict": "relevant",
+    "why": "title contains 'product manager'; massachusetts; skills sql, inventory, mrp"
+  },
+  "1009": {
+    "verdict": "not_relevant",
+    "why": "LOCATION: 'worcester, ma' matches nothing because 'ma' was dropped. Known limitation, by design"
+  },
+  "1010": {
+    "verdict": "not_relevant",
+    "why": "SKILLS: 'excellent' is not 'excel', 'sqlite' is not 'sql' under word boundaries"
+  }
+}

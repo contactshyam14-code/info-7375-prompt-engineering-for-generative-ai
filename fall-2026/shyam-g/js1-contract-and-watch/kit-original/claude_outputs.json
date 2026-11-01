@@ -1,0 +1,151 @@
+{
+  "_note": "posting_id under test is 1001",
+  "cases": [
+    {
+      "name": "valid",
+      "expect_valid": true,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston."
+      }
+    },
+    {
+      "name": "empty_justification",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": ""
+      }
+    },
+    {
+      "name": "cites_nothing",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [],
+        "posting_fields": [],
+        "justification": "Looks like a good fit for your background."
+      }
+    },
+    {
+      "name": "nonexistent_resume_field",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [
+          "hobbies"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston."
+      }
+    },
+    {
+      "name": "nonexistent_posting_field",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "salary"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston."
+      }
+    },
+    {
+      "name": "wrong_posting_id",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1002",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston."
+      }
+    },
+    {
+      "name": "bad_verdict_enum",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "maybe",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston."
+      }
+    },
+    {
+      "name": "extra_key",
+      "expect_valid": false,
+      "output": {
+        "posting_id": "1001",
+        "verdict": "relevant",
+        "resume_fields": [
+          "target_titles",
+          "skills",
+          "locations"
+        ],
+        "posting_fields": [
+          "title",
+          "content",
+          "location"
+        ],
+        "justification": "Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "name": "not_json_fenced",
+      "expect_valid": false,
+      "raw": "```json\n{\"posting_id\": \"1001\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Title matches 'supply chain analyst'; content names SQL and Power BI; location is Boston.\"}\n```"
+    }
+  ]
+}

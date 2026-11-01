@@ -1,0 +1,7 @@
+# Way 1: posting pasted into the prompt; no tools. 2026-10-31T22:42:23-04:00
+$ claude -p --tools "" < surface/1-paste-prompt.txt
+{"posting_id": "8311099", "verdict": "relevant", "resume_fields": ["target_titles", "skills", "locations", "exclude_keywords"], "posting_fields": ["title", "content", "location"], "justification": "The title 'Strategy & Operations Analyst' fits 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content mentions 'SQL' and 'software procurement', covering 2 skills (sql, procurement), and none of the exclude_keywords appear (the role asks for 2–4 years)."}
+
+# Way 2: Claude given read-only access to one file (Read tool only, no writes, no network). 2026-10-31T22:42:30-04:00
+$ claude -p --tools Read --allowedTools Read < surface/2-file-prompt.txt
+{"posting_id": "8311099", "verdict": "relevant", "resume_fields": ["target_titles", "skills", "locations", "exclude_keywords"], "posting_fields": ["title", "content", "location"], "justification": "The title 'Strategy & Operations Analyst' fits the target title 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content mentions at least 2 skills: 'sql' ('Comfortable writing SQL') and 'procurement' ('software procurement'). No exclude keywords appear, and the role asks for 2–4 years of experience."}

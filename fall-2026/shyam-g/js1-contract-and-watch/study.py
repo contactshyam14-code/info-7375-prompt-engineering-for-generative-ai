@@ -25,8 +25,11 @@ def postings_from(raw_path: str) -> dict[str, dict]:
 
 
 def read_labels() -> list[dict]:
-    with LABELS.open(encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
+    with LABELS.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    for r in rows:  # spreadsheet edits can leave stray spaces around a label
+        r["hand_label"] = (r.get("hand_label") or "").strip()
+    return rows
 
 
 def pick(raw_path: str, seed: int = 7375) -> None:

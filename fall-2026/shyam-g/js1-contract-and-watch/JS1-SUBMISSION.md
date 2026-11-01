@@ -261,9 +261,8 @@ _Source: `SAMPLING.md`_
 
 ## Sampling report (Chapter 1)
 
-**Status: Claude runs collected 2026-10-31 (22:48–23:07). NOT SCORED against hand labels: labels were
-not completed before the deadline.** This report covers repeatability only. Correctness is not
-measured.
+**Status: Claude runs collected 2026-10-31 22:48–23:07. Hand labels added 23:49 and scored 23:50
+(`python study.py score sampling.json`).**
 
 ### Setup
 - 5 postings from the live Formlabs response, picked before any labels or Claude results existed to
@@ -277,19 +276,23 @@ measured.
 ### Results
 | posting_id | title | Claude verdicts (4 fresh runs) | rule (record) | Claude = rule | my hand label |
 |---|---|---|---|---|---|
-| 8311099 | Strategy & Operations Analyst | relevant ×4 | relevant | 4/4 | _not labeled_ |
-| 8161780 | Global Sourcing Intern (Winter/Spring 2027) | not_relevant ×3, **relevant ×1** | not_relevant | 3/4 | _not labeled_ |
-| 8335610 | Mechanical Project Manager | not_relevant ×4 | not_relevant | 4/4 | _not labeled_ |
-| 8281689 | Product Manager, Software | not_relevant ×4 | not_relevant | 4/4 | _not labeled_ |
-| 7684675 | Manufacturing Ops Leader | not_relevant ×4 | not_relevant | 4/4 | _not labeled_ |
+| 8311099 | Strategy & Operations Analyst | relevant ×4 | relevant | 4/4 | relevant (Claude 4/4) |
+| 8161780 | Global Sourcing Intern (Winter/Spring 2027) | not_relevant ×3, **relevant ×1** | not_relevant | 3/4 | not_relevant (Claude 3/4) |
+| 8335610 | Mechanical Project Manager | not_relevant ×4 | not_relevant | 4/4 | **relevant** (Claude 0/4) |
+| 8281689 | Product Manager, Software | not_relevant ×4 | not_relevant | 4/4 | **relevant** (Claude 0/4) |
+| 7684675 | Manufacturing Ops Leader | not_relevant ×4 | not_relevant | 4/4 | **relevant** (Claude 0/4) |
 
 ### What this can and cannot show
 - **Can:** the same prompt on the same posting doesn't always return the same verdict. 8161780 flipped
   once in 4 runs. A single Claude call on that posting is not a stable answer, which is why the agent
   keeps the rule as the record and labels Claude's answer as a judgment.
 - **Can:** 4 of the 5 postings repeated 4/4. Repeating proves **repeatability, not correctness**.
-- **Cannot:** whether any of these verdicts is *right*. That needs the hand-label column, which is
-  empty. Agreement with the rule (19/20) is not correctness either, because the prompt restates the
+- **Against my hand labels:** Claude matched 7 of 20 verdicts, and the rule matched 2 of 5 postings. The three
+  postings where Claude was **4/4 consistent and 0/4 correct** (8335610, 8281689, 7684675) are the
+  clearest case of repeatability without correctness: Claude repeated the contract rule's answer
+  every time, and my labels disagree with that rule.
+- **Unresolved:** 7684675 is in Perrysburg, OH, and my written labeling rule says Boston or remote,
+  so my own label contradicts my rule. The labels were made in a hurry at 23:49 and were not re-checked. Agreement with the rule (19/20) is not correctness either, because the prompt restates the
   rule, so agreement is partly built in.
 - **Cannot:** anything about the size of the variation in general. With 4 samples, one flip is
   consistent with a true flip rate anywhere from a few percent to over half.
@@ -304,10 +307,12 @@ _Source: `EXPERIMENT.md`_
 
 ## Prompt experiment (Chapter 2)
 
-**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. **Hand labels were not completed, so no pass rates exist, and no revision was chosen or run.** Choosing the revision would have needed the dev-set misses against hand labels; making a change without them would not have been a real experiment.
+**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. Hand labels were added at 23:49 and scored at 23:50. **No revision was run:** there was no time left to choose one change from the dev misses, then run it on dev and held-out.
 
 ### Labeling rule (write this BEFORE labeling)
-**Not written before the deadline.**
+Relevant if it's a supply chain, procurement, planning or ops analyst role, entry to mid level (5 years or less), in Boston or remote.
+
+Written: 2026-10-31 23:43 (file timestamp), before labeling. (Wording adapted from Claude's example; the choice is mine.)
 
 ### Sets
 `labels/hand_labels.csv`: 20 real Formlabs postings from the 2026-10-31 live response. `study.py pick`
@@ -331,11 +336,19 @@ python study.py experiment --raw state/raw/2026-10-31T223703-formlabs-live.json 
 ### Results (pass = Claude verdict equals hand label; an invalid output counts as a fail)
 | | dev (10) | held-out (10) |
 |---|---|---|
-| baseline | not scored (no labels) | not scored (no labels) |
+| baseline | **6/10** | **7/10** |
 | revision | not run | not run |
-| rule (for reference) | not scored | not scored |
+| rule (for reference) | 6/10 | 7/10 |
 
-What was measured instead: **agreement of the baseline prompt with the rule**: dev 10/10, held-out
+Every miss is the same kind: I labeled a posting `relevant` and both Claude and the contract rule said
+`not_relevant`. The dev misses are 7684675, 8327414, 8241540 and 8167038; the held-out misses are
+8281689, 8335610 and 8333766. Claude never disagreed with the rule. The baseline prompt restates the
+rule, so it inherits the rule's misses. The revision I would test next is to replace the restated rule
+with my labeling rule. Several of my labels (an engineering technician, a materials scientist, a
+support role in Milwaukee, an ops leader in Ohio) do not obviously follow my own written rule either,
+and that is unresolved.
+
+Also measured: **agreement of the baseline prompt with the rule**: dev 10/10, held-out
 10/10 (`results/experiment-baseline-*.json`). This is not a pass rate. The prompt states the rule, so
 high agreement mostly shows that Claude followed the stated rule and produced valid output, not that
 either one is right. Only 1 of the 20 postings is rule-relevant (8311099), so this set barely tests the
@@ -625,26 +638,26 @@ _Source: `labels/hand_labels.csv`_
 
 ```csv
 posting_id,split,title,location,url,hand_label,hand_note
-7684675,dev,Manufacturing Ops Leader,"Perrysburg, OH",https://careers.formlabs.com/job/7684675/apply/?gh_jid=7684675,,
-8327414,dev,Engineering Technician,"Boston, MA",https://careers.formlabs.com/job/8327414/apply/?gh_jid=8327414,,
-8161780,dev,Global Sourcing Intern (Winter/Spring 2027),"Somerville, MA",https://careers.formlabs.com/job/8161780/apply/?gh_jid=8161780,,
-8241540,dev,Materials Scientist - June 2027 Grads,"Boston, MA",https://careers.formlabs.com/job/8241540/apply/?gh_jid=8241540,,
-8167038,dev,Technical Support Specialist ,"Milwaukee, WI",https://careers.formlabs.com/job/8167038/apply/?gh_jid=8167038,,
-8330945,dev,"Senior Product Manager, Software","Somerville, MA",https://careers.formlabs.com/job/8330945/apply/?gh_jid=8330945,,
-8331435,dev,3D Print Optimization Engineer,"Somerville, MA",https://careers.formlabs.com/job/8331435/apply/?gh_jid=8331435,,
-8241532,dev,Senior Materials Scientist,"Boston, MA",https://careers.formlabs.com/job/8241532/apply/?gh_jid=8241532,,
-8089674,dev,Customer Support Representative,"Milwaukee, WI",https://careers.formlabs.com/job/8089674/apply/?gh_jid=8089674,,
-8318323,dev,"Senior Product Manager, Hardware","Somerville, MA",https://careers.formlabs.com/job/8318323/apply/?gh_jid=8318323,,
-8311099,heldout,Strategy & Operations Analyst ,"Somerville, MA",https://careers.formlabs.com/job/8311099/apply/?gh_jid=8311099,,
-8281689,heldout,"Product Manager, Software","Somerville, MA",https://careers.formlabs.com/job/8281689/apply/?gh_jid=8281689,,
-8335610,heldout,Mechanical Project Manager,"Boston, MA",https://careers.formlabs.com/job/8335610/apply/?gh_jid=8335610,,
-8220243,heldout,Addetto/a al Servizio Clienti - Trasferimento a Budapest,"Budapest, Hungary",https://careers.formlabs.com/job/8220243/apply/?gh_jid=8220243,,
-8214451,heldout,Field Service Technician - Orlando,"Orlando, FL",https://careers.formlabs.com/job/8214451/apply/?gh_jid=8214451,,
-7984685,heldout,Production Equipment Maintenance Technician,"Billerica, MA",https://careers.formlabs.com/job/7984685/apply/?gh_jid=7984685,,
-8333766,heldout,"Product Manager, Hardware","Somerville, MA",https://careers.formlabs.com/job/8333766/apply/?gh_jid=8333766,,
-8261337,heldout,Startup Founder,"Somerville, MA",https://careers.formlabs.com/job/8261337/apply/?gh_jid=8261337,,
-8241508,heldout,3D Print Technician,"Boston, MA",https://careers.formlabs.com/job/8241508/apply/?gh_jid=8241508,,
-8249058,heldout,Senior Product Design Engineer,"Boston, MA",https://careers.formlabs.com/job/8249058/apply/?gh_jid=8249058,,
+7684675,dev,Manufacturing Ops Leader,"Perrysburg, OH",https://careers.formlabs.com/job/7684675/apply/?gh_jid=7684675, relevant,
+8327414,dev,Engineering Technician,"Boston, MA",https://careers.formlabs.com/job/8327414/apply/?gh_jid=8327414, relevant,
+8161780,dev,Global Sourcing Intern (Winter/Spring 2027),"Somerville, MA",https://careers.formlabs.com/job/8161780/apply/?gh_jid=8161780,not_relevant,"internship, but sourcing = procurement"
+8241540,dev,Materials Scientist - June 2027 Grads,"Boston, MA",https://careers.formlabs.com/job/8241540/apply/?gh_jid=8241540, relevant,
+8167038,dev,Technical Support Specialist ,"Milwaukee, WI",https://careers.formlabs.com/job/8167038/apply/?gh_jid=8167038, relevant,
+8330945,dev,"Senior Product Manager, Software","Somerville, MA",https://careers.formlabs.com/job/8330945/apply/?gh_jid=8330945,not_relevant,
+8331435,dev,3D Print Optimization Engineer,"Somerville, MA",https://careers.formlabs.com/job/8331435/apply/?gh_jid=8331435,not_relevant,
+8241532,dev,Senior Materials Scientist,"Boston, MA",https://careers.formlabs.com/job/8241532/apply/?gh_jid=8241532,not_relevant,
+8089674,dev,Customer Support Representative,"Milwaukee, WI",https://careers.formlabs.com/job/8089674/apply/?gh_jid=8089674,not_relevant,
+8318323,dev,"Senior Product Manager, Hardware","Somerville, MA",https://careers.formlabs.com/job/8318323/apply/?gh_jid=8318323,not_relevant,
+8311099,heldout,Strategy & Operations Analyst ,"Somerville, MA",https://careers.formlabs.com/job/8311099/apply/?gh_jid=8311099, relevant,
+8281689,heldout,"Product Manager, Software","Somerville, MA",https://careers.formlabs.com/job/8281689/apply/?gh_jid=8281689, relevant,
+8335610,heldout,Mechanical Project Manager,"Boston, MA",https://careers.formlabs.com/job/8335610/apply/?gh_jid=8335610, relevant,
+8220243,heldout,Addetto/a al Servizio Clienti - Trasferimento a Budapest,"Budapest, Hungary",https://careers.formlabs.com/job/8220243/apply/?gh_jid=8220243,not_relevant,
+8214451,heldout,Field Service Technician - Orlando,"Orlando, FL",https://careers.formlabs.com/job/8214451/apply/?gh_jid=8214451,not_relevant,
+7984685,heldout,Production Equipment Maintenance Technician,"Billerica, MA",https://careers.formlabs.com/job/7984685/apply/?gh_jid=7984685,not_relevant,
+8333766,heldout,"Product Manager, Hardware","Somerville, MA",https://careers.formlabs.com/job/8333766/apply/?gh_jid=8333766, relevant,
+8261337,heldout,Startup Founder,"Somerville, MA",https://careers.formlabs.com/job/8261337/apply/?gh_jid=8261337,not_relevant,
+8241508,heldout,3D Print Technician,"Boston, MA",https://careers.formlabs.com/job/8241508/apply/?gh_jid=8241508,not_relevant,
+8249058,heldout,Senior Product Design Engineer,"Boston, MA",https://careers.formlabs.com/job/8249058/apply/?gh_jid=8249058,not_relevant,
 ```
 
 ---
@@ -968,8 +981,11 @@ def postings_from(raw_path: str) -> dict[str, dict]:
 
 
 def read_labels() -> list[dict]:
-    with LABELS.open(encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
+    with LABELS.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+    for r in rows:  # spreadsheet edits can leave stray spaces around a label
+        r["hand_label"] = (r.get("hand_label") or "").strip()
+    return rows
 
 
 def pick(raw_path: str, seed: int = 7375) -> None:

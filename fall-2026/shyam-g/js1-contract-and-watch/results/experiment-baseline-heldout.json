@@ -4,7 +4,7 @@
     "try": 1,
     "claude_verdict": "relevant",
     "rule_verdict": "relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Strategy & Operations Analyst' matches the target title 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content mentions two listed skills, 'SQL' and 'software procurement', and none of the exclude keywords appear (the role asks for 2\u20134 years of experience).\"}"
   },
   {
@@ -12,7 +12,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Software' matches the target title 'product manager', and the location 'Somerville, MA' matches 'somerville'. However, the content shows none of the listed skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement); 'excellence' is not the skill 'excel'. That falls short of the 2-skill minimum, even though no exclude_keywords appear.\"}"
   },
   {
@@ -20,7 +20,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Mechanical Project Manager' fits 'project manager', the location 'Boston, MA' matches 'boston', and no exclude_keywords appear. However, the content explicitly shows only one listed skill, 'inventory'; 'spreadsheet wizardry' and BOM management do not literally match 'excel' or 'mrp', so it falls short of the 2-skill minimum.\"}"
   },
   {
@@ -28,7 +28,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8220243\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Addetto/a al Servizio Clienti' (customer service representative) does not match any target title such as supply chain analyst or operations analyst, and the location 'Budapest, Hungary' is not in Massachusetts or remote. The content mentions none of the candidate's skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement).\"}"
   },
   {
@@ -36,7 +36,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8214451\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Field Service Technician' doesn't match any target title, and the location 'Orlando, FL' (with travel 80%+ near Newark Airport) is neither in Massachusetts nor remote. The content mentions only Salesforce, CAD/CAM and hands-on repair, none of the candidate's skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement).\"}"
   },
   {
@@ -44,7 +44,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"7984685\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Production Equipment Maintenance Technician' does not match any target title, such as operations analyst or supply chain analyst. The location 'Billerica, MA' is in Massachusetts, but the content shows only one listed skill, 'inventory', so the 2-skill threshold is not met.\"}"
   },
   {
@@ -52,7 +52,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8333766\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Hardware' matches the target title 'product manager', and the Somerville, MA location matches 'somerville'. No exclude keywords appear. However, the content shows none of the candidate's skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement), so it misses the 2-skill minimum.\"}"
   },
   {
@@ -60,7 +60,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8261337\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Startup Founder' does not fit any target title; the role is a founder-style materials science leadership position, not a product manager or analyst role. The location Somerville, MA matches, but the content shows only one listed skill ('SQL', listed as a bonus), short of the required 2. No exclude_keywords appear.\"}"
   },
   {
@@ -68,7 +68,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8241508\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title '3D Print Technician' does not match any target title such as supply chain analyst or operations analyst. The content shows none of the candidate's skills (it asks for Python, CAD, and SLA/SLS printing, not SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, or procurement), even though the Boston, MA location matches.\"}"
   },
   {
@@ -76,7 +76,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8249058\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Senior Product Design Engineer' is a mechanical/mechatronic engineering role and does not fit any target title such as 'product manager' or 'operations analyst'. The content mentions none of the candidate's skills (no SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, or procurement), so it falls short of the 2-skill minimum. The location 'Boston, MA' matches and no exclude_keywords appear.\"}"
   }
 ]

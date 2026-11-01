@@ -4,7 +4,7 @@
     "try": 1,
     "claude_verdict": "relevant",
     "rule_verdict": "relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Title 'Strategy & Operations Analyst' fits 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content shows 'sql' (writing SQL queries) and 'procurement' (software procurement), and no exclude keywords appear, since experience asked is 2\u20134 years.\"}"
   },
   {
@@ -12,7 +12,7 @@
     "try": 2,
     "claude_verdict": "relevant",
     "rule_verdict": "relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Strategy & Operations Analyst' fits the target title 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content shows at least 2 skills, 'SQL' and 'procurement' (from 'software procurement'). No exclude keywords appear, and the experience requirement is 2\u20134 years.\"}"
   },
   {
@@ -20,7 +20,7 @@
     "try": 3,
     "claude_verdict": "relevant",
     "rule_verdict": "relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Strategy & Operations Analyst' matches the target title 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content mentions at least 2 skills, 'SQL' and 'software procurement', and none of the exclude keywords appear, since the role asks for 2\u20134 years of experience.\"}"
   },
   {
@@ -28,7 +28,7 @@
     "try": 4,
     "claude_verdict": "relevant",
     "rule_verdict": "relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Strategy & Operations Analyst' fits the target title 'operations analyst', and the location 'Somerville, MA' matches 'somerville'. The content names at least 2 skills, 'sql' (writing SQL queries) and 'procurement' (software procurement). None of the exclude keywords appear, since the role asks for 2\u20134 years and reports to the CIO without using 'director', 'vp', 'principal', or 'senior manager'.\"}"
   },
   {
@@ -36,7 +36,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8161780\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The location 'Somerville, MA' matches, the content shows 'procurement' and 'Excel', and no exclude keywords appear. However, the title 'Global Sourcing Intern' is an internship and matches none of the target titles such as 'procurement analyst' or 'supply chain analyst', so the title requirement fails.\"}"
   },
   {
@@ -44,7 +44,7 @@
     "try": 2,
     "claude_verdict": "relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8161780\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Global Sourcing Intern' is a procurement and supply chain strategy role, which fits the 'procurement analyst' and 'supply chain strategy' targets, and the location 'Somerville, MA' matches 'somerville'. The content mentions 'procurement' (procurement processes and experience) and 'excel' (Advanced use of Microsoft Excel), meeting the two-skill minimum, and no exclude keywords such as director, vp, principal, or senior manager appear.\"}"
   },
   {
@@ -52,7 +52,7 @@
     "try": 3,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8161780\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Location 'Somerville, MA' matches, the content shows 2 skills ('procurement' and 'Excel'), and no exclude_keywords appear. However, the title 'Global Sourcing Intern' is a winter/spring internship and does not fit any target title such as 'procurement analyst' or 'supply chain analyst', so it fails the title criterion.\"}"
   },
   {
@@ -60,7 +60,7 @@
     "try": 4,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "not_relevant",
     "raw": "{\"posting_id\": \"8161780\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The location 'Somerville, MA' matches, the content shows at least two skills ('procurement' and 'Excel'), and no exclude_keywords appear. The title 'Global Sourcing Intern' does not match any target title, such as 'procurement analyst' or 'supply chain analyst'. It is a sourcing internship, not an analyst, planner or manager role.\"}"
   },
   {
@@ -68,7 +68,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Mechanical Project Manager' matches 'project manager', the location Boston, MA matches 'boston', and none of the exclude_keywords appear. However, the content shows only one listed skill, 'inventory'; sql, power bi, sap, mrp, forecasting, excel and procurement are absent ('spreadsheet wizardry' does not name excel), so it misses the 2-skill minimum.\"}"
   },
   {
@@ -76,7 +76,7 @@
     "try": 2,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Mechanical Project Manager' matches 'project manager', the location Boston, MA matches 'boston', and no exclude_keywords appear. However, the content shows only one listed skill ('inventory'). 'Spreadsheet wizardry' and 'ordering' do not literally show 'excel' or 'procurement', so the posting fails the minimum of 2 skills.\"}"
   },
   {
@@ -84,7 +84,7 @@
     "try": 3,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Mechanical Project Manager' matches the target title 'project manager', the location 'Boston, MA' matches 'boston', and no exclude keywords appear. However, the content explicitly shows only one listed skill, 'inventory'. 'Spreadsheet wizardry' is not an explicit 'excel' mention, and sql, power bi, sap, mrp, forecasting and procurement are absent, so the requirement of at least 2 skills is not met.\"}"
   },
   {
@@ -92,7 +92,7 @@
     "try": 4,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Mechanical Project Manager' fits 'project manager', the location 'Boston, MA' matches 'boston', and no exclude_keywords appear. However, the content shows only one listed skill, 'inventory'. It mentions 'spreadsheet wizardry' but not 'excel', and there is no sql, power bi, sap, mrp, forecasting, or procurement, so it misses the 2-skill minimum.\"}"
   },
   {
@@ -100,7 +100,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Software' matches the target title 'product manager', and 'Somerville, MA' matches the location 'somerville'. However, the content mentions none of the listed skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement); 'excellence' is the only near-match and is not the Excel skill, so it falls short of the 2-skill minimum. No exclude_keywords appear.\"}"
   },
   {
@@ -108,7 +108,7 @@
     "try": 2,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Software' matches the target title 'product manager', and the location 'Somerville, MA' matches 'somerville'/'massachusetts'. However, the content mentions none of the candidate's skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement); it focuses on CAD/CAM, IoT, Agile/Scrum and 3D printing instead, so it falls short of the 2-skill minimum. No exclude keywords appear.\"}"
   },
   {
@@ -116,7 +116,7 @@
     "try": 3,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Software' matches the target title 'product manager', and 'Somerville, MA' matches 'somerville'. No exclude keywords appear. However, the content shows none of the required skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement); 'excellence' is not the Excel skill. It focuses instead on CAD/CAM, IoT, Agile/Scrum, and 3D printing, so it fails the minimum of 2 skills.\"}"
   },
   {
@@ -124,7 +124,7 @@
     "try": 4,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Product Manager, Software' matches the target title 'product manager', and the location 'Somerville, MA' matches 'somerville'. However, the content mentions none of the listed skills (sql, power bi, sap, mrp, forecasting, inventory, excel, procurement); 'excellence' is not the skill Excel, and the bonus skills are CAD/CAM, IoT, and Agile/Scrum. No exclude_keywords appear, but the posting fails the 2-skill minimum.\"}"
   },
   {
@@ -132,7 +132,7 @@
     "try": 1,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"7684675\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Manufacturing Ops Leader' does not match any target title (closest is 'operations analyst', but this is a site leadership role), and the location 'Perrysburg, OH' is not in Boston/Cambridge/Somerville/Massachusetts or remote. The content does mention 'inventory' and 'Procurement' (2 skills), and no exclude keywords appear, but the title and location failures disqualify it.\"}"
   },
   {
@@ -140,7 +140,7 @@
     "try": 2,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"7684675\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Manufacturing Ops Leader' does not match any target title, and the location 'Perrysburg, OH' is not in Boston, Cambridge, Somerville, Massachusetts or remote. The content does mention 'inventory' and 'procurement', but the title and location mismatches disqualify it.\"}"
   },
   {
@@ -148,7 +148,7 @@
     "try": 3,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"7684675\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Manufacturing Ops Leader' does not match any target title (e.g., operations analyst, project manager), and the location 'Perrysburg, OH' is not Boston, Cambridge, Somerville, Massachusetts, or remote. The content does mention 'inventory' and 'Procurement', but the title and location mismatches disqualify it.\"}"
   },
   {
@@ -156,7 +156,7 @@
     "try": 4,
     "claude_verdict": "not_relevant",
     "rule_verdict": "not_relevant",
-    "hand_label": "",
+    "hand_label": "relevant",
     "raw": "{\"posting_id\": \"7684675\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"skills\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Manufacturing Ops Leader' does not match any target title, and the location 'Perrysburg, OH' is not Boston, Cambridge, Somerville, Massachusetts, or remote. The content does mention 'inventory' and 'procurement' and contains no exclude keywords, but the title and location mismatches disqualify it.\"}"
   }
 ]

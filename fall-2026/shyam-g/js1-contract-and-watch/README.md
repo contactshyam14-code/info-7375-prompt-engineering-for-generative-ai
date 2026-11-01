@@ -63,7 +63,8 @@ python -m venv .venv
 | 2026-10-31 22:41 | SEEDED run 2: `--from-file state/raw/...-live.json --state state-seeded --claude` | 5 new (exactly the 5 removed); rule and Claude agree on all 5; 8311099 relevant |
 | 2026-10-31 22:42 | action-surface Ways 1 and 2 (`surface/runs.txt`) | both `relevant` for 8311099 |
 | — | live run on a second calendar day | **not done** before the 2026-10-31 deadline; the second run is seeded |
-| 2026-10-31 22:48–23:07 | `study.py sample` (5×4) and `study.py experiment` baseline on dev and held-out | 40 Claude outputs, all valid; 8161780 flipped 1 of 4; **unscored: hand labels not completed** |
+| 2026-10-31 22:48–23:07 | `study.py sample` (5×4) and `study.py experiment` baseline on dev and held-out | 40 Claude outputs, all valid; 8161780 flipped 1 of 4; scored after labeling (23:50): sampling 7/20; baseline dev 6/10, held-out 7/10 |
+| 2026-10-31 23:53–23:55 | `study.py experiment --prompt prompts/revision.txt` on dev, then held-out | revision dev 5/10, held-out 7/10 |
 
 The seeded run 1 is **constructed**: the live response minus its 5 most recently published postings, standing in for an earlier day. It is labeled SEEDED in its file name, its `_note`, and the evidence log.
 
@@ -85,7 +86,7 @@ _Facts drafted by Claude; signed by the student (see the last line)._
 - One record (8311099): _student to recompute by hand before signing_
 
 **Not checked**
-- Whether the rule's or Claude's verdicts are *right*: the 20 hand labels were not completed, so the sampling and the prompt experiment are unscored and no prompt revision was run
+- Whether my 20 hand labels are themselves consistent: several contradict my written labeling rule (e.g. 7684675 is in Ohio), and they were not re-checked
 - Greenhouse responses that lack `location` or `content`, pagination, or rate limits
 - Two runs on two real calendar days (the second run so far is seeded)
 - Prompt injection inside posting text
@@ -95,7 +96,7 @@ _Facts drafted by Claude; signed by the student (see the last line)._
 - That Claude's verdict is a fact, or that it agreeing with the rule makes either one correct
 - Anything beyond one board (Formlabs) and one fictional persona. Some Formlabs postings are not in English (e.g. 8220243, Italian), and the rule's English keywords cannot match them.
 
-**Signed or withheld:** Signed, Shyam Sundar Jayaraman Gopalakrishnan, 2026-10-31. Signed as a partial submission: hand labels, prompt revision and a second live day are listed above as not checked. Signature line typed by Claude at my instruction.
+**Signed or withheld:** Signed, Shyam Sundar Jayaraman Gopalakrishnan, 2026-10-31. Signed with the gaps listed above as not checked: label consistency, a second live day, and the hand recompute of 8311099. Signature line typed by Claude at my instruction.
 
 ## Driver's seat
 _Draft; confirm against what actually happened._

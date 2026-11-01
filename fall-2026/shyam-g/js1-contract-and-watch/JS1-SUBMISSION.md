@@ -94,7 +94,8 @@ python -m venv .venv
 | 2026-10-31 22:41 | SEEDED run 2: `--from-file state/raw/...-live.json --state state-seeded --claude` | 5 new (exactly the 5 removed); rule and Claude agree on all 5; 8311099 relevant |
 | 2026-10-31 22:42 | action-surface Ways 1 and 2 (`surface/runs.txt`) | both `relevant` for 8311099 |
 | — | live run on a second calendar day | **not done** before the 2026-10-31 deadline; the second run is seeded |
-| 2026-10-31 22:48–23:07 | `study.py sample` (5×4) and `study.py experiment` baseline on dev and held-out | 40 Claude outputs, all valid; 8161780 flipped 1 of 4; **unscored: hand labels not completed** |
+| 2026-10-31 22:48–23:07 | `study.py sample` (5×4) and `study.py experiment` baseline on dev and held-out | 40 Claude outputs, all valid; 8161780 flipped 1 of 4; scored after labeling (23:50): sampling 7/20; baseline dev 6/10, held-out 7/10 |
+| 2026-10-31 23:53–23:55 | `study.py experiment --prompt prompts/revision.txt` on dev, then held-out | revision dev 5/10, held-out 7/10 |
 
 The seeded run 1 is **constructed**: the live response minus its 5 most recently published postings, standing in for an earlier day. It is labeled SEEDED in its file name, its `_note`, and the evidence log.
 
@@ -116,7 +117,7 @@ _Facts drafted by Claude; signed by the student (see the last line)._
 - One record (8311099): _student to recompute by hand before signing_
 
 **Not checked**
-- Whether the rule's or Claude's verdicts are *right*: the 20 hand labels were not completed, so the sampling and the prompt experiment are unscored and no prompt revision was run
+- Whether my 20 hand labels are themselves consistent: several contradict my written labeling rule (e.g. 7684675 is in Ohio), and they were not re-checked
 - Greenhouse responses that lack `location` or `content`, pagination, or rate limits
 - Two runs on two real calendar days (the second run so far is seeded)
 - Prompt injection inside posting text
@@ -126,7 +127,7 @@ _Facts drafted by Claude; signed by the student (see the last line)._
 - That Claude's verdict is a fact, or that it agreeing with the rule makes either one correct
 - Anything beyond one board (Formlabs) and one fictional persona. Some Formlabs postings are not in English (e.g. 8220243, Italian), and the rule's English keywords cannot match them.
 
-**Signed or withheld:** Signed, Shyam Sundar Jayaraman Gopalakrishnan, 2026-10-31. Signed as a partial submission: hand labels, prompt revision and a second live day are listed above as not checked. Signature line typed by Claude at my instruction.
+**Signed or withheld:** Signed, Shyam Sundar Jayaraman Gopalakrishnan, 2026-10-31. Signed with the gaps listed above as not checked: label consistency, a second live day, and the hand recompute of 8311099. Signature line typed by Claude at my instruction.
 
 ### Driver's seat
 _Draft; confirm against what actually happened._
@@ -307,7 +308,7 @@ _Source: `EXPERIMENT.md`_
 
 ## Prompt experiment (Chapter 2)
 
-**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. Hand labels were added at 23:49 and scored at 23:50. **No revision was run:** there was no time left to choose one change from the dev misses, then run it on dev and held-out.
+**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. Hand labels were added at 23:49 and scored at 23:50. The revision was run 23:53 (dev), frozen, then run 23:54 (held-out).
 
 ### Labeling rule (write this BEFORE labeling)
 Relevant if it's a supply chain, procurement, planning or ops analyst role, entry to mid level (5 years or less), in Boston or remote.
@@ -322,7 +323,10 @@ revision is frozen.
 
 ### Prompts
 - Baseline: `prompts/baseline.txt` (states the CONTRACT rule; JSON-only output contract)
-- Revision: **not written** (it needs the dev misses against hand labels).
+- Revision: `prompts/revision.txt`. **One change:** the sentence restating the contract rule is replaced by
+  my labeling rule; everything else is byte-identical apart from Windows line endings. Chosen because
+  every baseline miss was a posting I labeled `relevant` that the contract rule rejected. Claude
+  proposed the change in the report; I asked for it to be run.
 
 ### Commands
 ```
@@ -337,14 +341,18 @@ python study.py experiment --raw state/raw/2026-10-31T223703-formlabs-live.json 
 | | dev (10) | held-out (10) |
 |---|---|---|
 | baseline | **6/10** | **7/10** |
-| revision | not run | not run |
+| revision | **5/10** | **7/10** |
 | rule (for reference) | 6/10 | 7/10 |
 
 Every miss is the same kind: I labeled a posting `relevant` and both Claude and the contract rule said
 `not_relevant`. The dev misses are 7684675, 8327414, 8241540 and 8167038; the held-out misses are
 8281689, 8335610 and 8333766. Claude never disagreed with the rule. The baseline prompt restates the
-rule, so it inherits the rule's misses. The revision I would test next is to replace the restated rule
-with my labeling rule. Several of my labels (an engineering technician, a materials scientist, a
+rule, so it inherits the rule's misses. **The revision did not help:** dev went from 6/10 to 5/10, and held-out stayed at 7/10. On dev, Claude still
+rejected the same 4 postings, and it flipped 8161780 (Global Sourcing Intern) to `relevant`, a
+posting I had labeled `not_relevant` with the note "internship, but sourcing = procurement". So
+the one changed verdict moved the wrong way. One posting is within the noise seen in `SAMPLING.md`
+(that same posting flipped 1 of 4 times under the baseline), so I can't say the revision is worse.
+I can only say it is not shown to be better. Several of my labels (an engineering technician, a materials scientist, a
 support role in Milwaukee, an ops leader in Ohio) do not obviously follow my own written rule either,
 and that is unresolved.
 

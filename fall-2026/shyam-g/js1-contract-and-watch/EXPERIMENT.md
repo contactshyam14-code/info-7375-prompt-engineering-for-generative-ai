@@ -1,6 +1,6 @@
 # Prompt experiment (Chapter 2)
 
-**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. Hand labels were added at 23:49 and scored at 23:50. **No revision was run:** there was no time left to choose one change from the dev misses, then run it on dev and held-out.
+**Status: PARTIAL (2026-10-31, deadline).** The baseline prompt ran on all 20 postings, and all 20 outputs were valid. Hand labels were added at 23:49 and scored at 23:50. The revision was run 23:53 (dev), frozen, then run 23:54 (held-out).
 
 ## Labeling rule (write this BEFORE labeling)
 Relevant if it's a supply chain, procurement, planning or ops analyst role, entry to mid level (5 years or less), in Boston or remote.
@@ -15,7 +15,10 @@ revision is frozen.
 
 ## Prompts
 - Baseline: `prompts/baseline.txt` (states the CONTRACT rule; JSON-only output contract)
-- Revision: **not written** (it needs the dev misses against hand labels).
+- Revision: `prompts/revision.txt`. **One change:** the sentence restating the contract rule is replaced by
+  my labeling rule; everything else is byte-identical apart from Windows line endings. Chosen because
+  every baseline miss was a posting I labeled `relevant` that the contract rule rejected. Claude
+  proposed the change in the report; I asked for it to be run.
 
 ## Commands
 ```
@@ -30,14 +33,18 @@ python study.py experiment --raw state/raw/2026-10-31T223703-formlabs-live.json 
 | | dev (10) | held-out (10) |
 |---|---|---|
 | baseline | **6/10** | **7/10** |
-| revision | not run | not run |
+| revision | **5/10** | **7/10** |
 | rule (for reference) | 6/10 | 7/10 |
 
 Every miss is the same kind: I labeled a posting `relevant` and both Claude and the contract rule said
 `not_relevant`. The dev misses are 7684675, 8327414, 8241540 and 8167038; the held-out misses are
 8281689, 8335610 and 8333766. Claude never disagreed with the rule. The baseline prompt restates the
-rule, so it inherits the rule's misses. The revision I would test next is to replace the restated rule
-with my labeling rule. Several of my labels (an engineering technician, a materials scientist, a
+rule, so it inherits the rule's misses. **The revision did not help:** dev went from 6/10 to 5/10, and held-out stayed at 7/10. On dev, Claude still
+rejected the same 4 postings, and it flipped 8161780 (Global Sourcing Intern) to `relevant`, a
+posting I had labeled `not_relevant` with the note "internship, but sourcing = procurement". So
+the one changed verdict moved the wrong way. One posting is within the noise seen in `SAMPLING.md`
+(that same posting flipped 1 of 4 times under the baseline), so I can't say the revision is worse.
+I can only say it is not shown to be better. Several of my labels (an engineering technician, a materials scientist, a
 support role in Milwaukee, an ops leader in Ohio) do not obviously follow my own written rule either,
 and that is unresolved.
 

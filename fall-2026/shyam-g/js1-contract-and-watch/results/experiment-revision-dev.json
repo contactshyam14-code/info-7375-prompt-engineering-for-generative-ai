@@ -1,0 +1,82 @@
+[
+  {
+    "posting_id": "7684675",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"7684675\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"location\", \"content\"], \"justification\": \"The title 'Manufacturing Ops Leader' is a people-leadership role overseeing site operations, not a supply chain, procurement, planning, or ops analyst role, and it requires 'minimum 5 years of experience in a senior production/manufacturing role'. The location is Perrysburg, OH, not Boston or remote. Supply chain, procurement, and inventory appear only as partner functions, so overlap with the target titles is weak.\"}"
+  },
+  {
+    "posting_id": "8327414",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8327414\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Engineering Technician' and duties such as prototyping 3D printers, PCB rework, hand soldering, CMM inspection and machining parts make this a hands-on hardware role, not a supply chain, procurement, planning or operations analyst role. None of the candidate's skills (SQL, Power BI, SAP, MRP, forecasting, inventory, procurement) appear. The Boston/Somerville location matches, but that is not enough to make it relevant.\"}"
+  },
+  {
+    "posting_id": "8161780",
+    "try": 1,
+    "claude_verdict": "relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8161780\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The role is entry level and covers supply chain and procurement work, including strategic sourcing, supplier risk assessment, purchase orders and Excel, which matches the 'procurement analyst'/'supply chain analyst' targets and the 'procurement'/'excel' skills. It is onsite in Somerville, MA, which is in the candidate's location list and the Boston area. No exclude keywords such as director, senior manager or 8+ years appear, though it is a Winter/Spring 2027 internship rather than a full-time analyst position.\"}"
+  },
+  {
+    "posting_id": "8241540",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8241540\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Materials Scientist' is an R&D polymer development role and matches none of the target titles (supply chain, procurement, planning, or operations analyst). The location Boston, MA matches and SQL appears only as a bonus skill, but the core duties of materials research, experimentation, and commercialization do not involve supply chain, procurement, forecasting, or inventory work.\"}"
+  },
+  {
+    "posting_id": "8167038",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8167038\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Technical Support Specialist' is a customer support role and matches none of the target titles such as supply chain analyst, procurement analyst, or operations analyst. The content centers on customer cases, SLAs, and hardware troubleshooting, with no SQL, SAP, MRP, forecasting, or procurement skills. The location is Milwaukee, WI, which is neither Boston-area nor remote.\"}"
+  },
+  {
+    "posting_id": "8330945",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8330945\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The location 'Somerville, MA' matches, and 'product manager' is one of the target titles. However, this is a 'Senior Product Manager, Software' role about firmware, PreForm desktop, IoT Dashboard, and CAD/CAM workflows, not a supply chain, procurement, planning, or ops analyst role, and none of the candidate's skills (SQL, SAP, MRP, forecasting, inventory, procurement) appear. The 'Senior' level and $150K\u2013$200K base also point above entry-to-mid level.\"}"
+  },
+  {
+    "posting_id": "8331435",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8331435\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title '3D Print Optimization Engineer' is a hands-on engineering role (root cause analysis across mechanics, optics, chemistry, CAD, python), not a supply chain, procurement, planning or ops analyst role, and it does not mention target skills like SAP, MRP, forecasting, inventory or procurement. The location Somerville, MA matches, but the job function does not.\"}"
+  },
+  {
+    "posting_id": "8241532",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8241532\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Senior Materials Scientist' is a polymer R&D role focused on materials development and experiments, matching none of the target titles (supply chain, procurement, demand planner, operations analyst). The location 'Boston, MA' matches, but the only skill overlap is SQL listed as a bonus, with no SAP, MRP, forecasting, inventory, or procurement.\"}"
+  },
+  {
+    "posting_id": "8089674",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8089674\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Customer Support Representative' does not match any target title such as supply chain analyst, procurement analyst, or operations analyst. The content describes customer case handling and technical support with none of the candidate's skills (SQL, Power BI, SAP, MRP, forecasting, inventory, procurement). The location is Milwaukee, WI, which is neither Boston nor remote.\"}"
+  },
+  {
+    "posting_id": "8318323",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8318323\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The location (Somerville, MA) matches, but the title 'Senior Product Manager, Hardware' is a senior hardware product role, not a supply chain, procurement, planning or ops analyst role. The content asks for a hardware engineering or physics background and product founder/startup leadership experience, and does not mention SQL, SAP, MRP, forecasting, inventory or procurement.\"}"
+  }
+]

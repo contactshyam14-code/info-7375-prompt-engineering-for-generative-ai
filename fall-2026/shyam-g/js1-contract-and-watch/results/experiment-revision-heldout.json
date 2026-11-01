@@ -1,0 +1,82 @@
+[
+  {
+    "posting_id": "8311099",
+    "try": 1,
+    "claude_verdict": "relevant",
+    "rule_verdict": "relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8311099\", \"verdict\": \"relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Title 'Strategy & Operations Analyst' matches target 'operations analyst'/'supply chain strategy', location Somerville, MA is in the candidate's locations, and '2\u20134 years' experience is within the 5-year limit with no exclude keywords present. Content also overlaps on SQL and procurement/vendor management (software purchasing, renewals, SaaS spend), though it is IT-ops focused rather than supply chain.\"}"
+  },
+  {
+    "posting_id": "8281689",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8281689\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Although 'Product Manager' appears in target_titles and Somerville, MA matches locations with no exclude keywords present, the role is a software product manager (firmware/UI, PreForm desktop, IoT Dashboard) asking for an engineering background and CAD/CAM, IoT and Agile/Scrum skills. It is not a supply chain, procurement, planning or ops analyst role, and none of the candidate's skills (SQL, Power BI, SAP, MRP, forecasting, inventory, procurement) appear.\"}"
+  },
+  {
+    "posting_id": "8335610",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8335610\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Boston, MA matches, no exclude keywords appear, and 'project manager' plus 'inventory' overlap with the profile. However, the 'Mechanical Project Manager' role is an engineering prototyping PM embedded in the mechanical engineering team (ECOs, prototype builds, PLM, bonus 'depth in mechanical engineering'). It is not a supply chain, procurement, planning or ops analyst role.\"}"
+  },
+  {
+    "posting_id": "8220243",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8220243\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Addetto/a al Servizio Clienti' is an Italian-language customer service and technical support role, which matches none of the target titles (supply chain, procurement, planning or operations analyst). The location is 'Budapest, Hungary' with relocation required and hybrid office work, so it is neither Boston-area nor remote. The content focuses on 3D printer troubleshooting and Italian/English C1 fluency, not SQL, SAP, MRP, forecasting, inventory or procurement skills.\"}"
+  },
+  {
+    "posting_id": "8214451",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8214451\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Field Service Technician' is a hands-on equipment installation and repair role, not a supply chain, procurement, planning, or ops analyst position, and the content emphasizes electromechanical troubleshooting and 80%+ travel rather than SQL, Power BI, SAP, MRP, forecasting, or inventory skills. The location is Orlando, FL (with Newark Airport proximity required), not Boston/Massachusetts or remote.\"}"
+  },
+  {
+    "posting_id": "7984685",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"7984685\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Production Equipment Maintenance Technician' is an hourly hands-on hardware repair role (diagnosing electro-mechanical failures on 3D printers, preventative maintenance) rather than a supply chain, procurement, planning or ops analyst role, and none of the target titles match. The only overlap is incidental 'inventory' and spare-parts tracking, and the location is Billerica, MA, which is onsite outside Boston and not remote.\"}"
+  },
+  {
+    "posting_id": "8333766",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "relevant",
+    "raw": "{\"posting_id\": \"8333766\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Although 'Product Manager' appears in target_titles and Somerville, MA matches locations, this is a hardware product management role, not a supply chain, procurement, planning or ops analyst role, and it calls for a 'hardware engineering or physics background' and 'product founder' experience. None of the candidate's core skills (sql, sap, mrp, forecasting, inventory, procurement) appear in the content.\"}"
+  },
+  {
+    "posting_id": "8261337",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8261337\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title 'Startup Founder' is a senior materials-science leadership role requiring 'Proven Entrepreneurial Experience', P&L ownership, and hiring and leading teams, not a supply chain, procurement, planning or ops analyst role at entry to mid level. Somerville, MA fits the location, and 'supply chain' and 'SQL' appear only in passing, so they do not make the posting relevant.\"}"
+  },
+  {
+    "posting_id": "8241508",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8241508\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"The title '3D Print Technician' matches none of the target titles (supply chain, procurement, planning, or operations analyst). The content centers on running 3D printers, Python script editing, CAD, and SLA/SLS printing rather than SQL, Power BI, SAP, MRP, forecasting, inventory, or procurement. The Boston, MA location matches, but that alone does not make the role relevant.\"}"
+  },
+  {
+    "posting_id": "8249058",
+    "try": 1,
+    "claude_verdict": "not_relevant",
+    "rule_verdict": "not_relevant",
+    "hand_label": "not_relevant",
+    "raw": "{\"posting_id\": \"8249058\", \"verdict\": \"not_relevant\", \"resume_fields\": [\"target_titles\", \"skills\", \"locations\", \"exclude_keywords\"], \"posting_fields\": [\"title\", \"content\", \"location\"], \"justification\": \"Although the location (Boston, MA) matches and the 2+ years requirement fits entry-to-mid level, the title 'Senior Product Design Engineer' is a mechanical/mechatronic R&D engineering role, not a supply chain, procurement, planning, or ops analyst role. The content centers on hardware prototyping, sensors/actuators, and tolerance analysis, with none of the candidate's skills (SQL, Power BI, SAP, MRP, forecasting, inventory, procurement) mentioned.\"}"
+  }
+]

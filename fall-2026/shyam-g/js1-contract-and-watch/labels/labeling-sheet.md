@@ -1,4 +1,5 @@
-# Labeling sheet (no rule or Claude verdicts shown, on purpose)
+    
+    # Labeling sheet (no rule or Claude verdicts shown, on purpose)
 
 Persona: Jordan Rivera (fictional). Targets supply chain / procurement / demand planning / ops analyst / project or product manager roles; based in Boston area; SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, procurement; avoids director/VP/principal/senior-manager and 8+/10+ year roles.
 

@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-11-10T14:43:21-05:00",
+  "label": "SIMULATED-timeout",
+  "labels_in_this_run": [
+    "live"
+  ],
+  "exit_status": "incomplete",
+  "exit_reason": "failed boards: ['spotify', 'nosuchboard-js2-xyz']",
+  "requests": 5,
+  "elapsed_seconds": 8.828,
+  "budget": {
+    "max_boards": 5,
+    "max_requests": 10,
+    "max_seconds": 60,
+    "max_retries_per_board": 1,
+    "retry_backoff_seconds": 2,
+    "request_timeout_seconds": 15
+  },
+  "boards": [
+    {
+      "board": "formlabs",
+      "ats": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true",
+      "status": "ok",
+      "count": 249,
+      "attempts": 1,
+      "error": null,
+      "baseline": false,
+      "new": [],
+      "relevant_now": 1
+    },
+    {
+      "board": "spotify",
+      "ats": "lever",
+      "url": "https://api.lever.co/v0/postings/spotify?mode=json",
+      "status": "error",
+      "count": null,
+      "attempts": 2,
+      "error": "gave up after 2 attempts: SIMULATED timeout for spotify (--simulate-timeout)"
+    },
+    {
+      "board": "palantir",
+      "ats": "lever",
+      "url": "https://api.lever.co/v0/postings/palantir?mode=json",
+      "status": "ok",
+      "count": 304,
+      "attempts": 1,
+      "error": null,
+      "baseline": false,
+      "new": [],
+      "relevant_now": 0
+    },
+    {
+      "board": "nosuchboard-js2-xyz",
+      "ats": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/nosuchboard-js2-xyz/jobs?content=true",
+      "status": "error",
+      "count": null,
+      "attempts": 1,
+      "error": "HTTP 404"
+    }
+  ]
+}

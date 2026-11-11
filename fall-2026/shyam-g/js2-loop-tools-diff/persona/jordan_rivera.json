@@ -1,0 +1,40 @@
+{
+  "_note": "FICTIONAL PERSONA. Not a real person.",
+  "name": "Jordan Rivera",
+  "email": "jordan.rivera@example.com",
+  "phone": "555-0142",
+  "target_titles": [
+    "supply chain analyst",
+    "supply chain strategy",
+    "procurement analyst",
+    "demand planner",
+    "project manager",
+    "product manager",
+    "operations analyst"
+  ],
+  "skills": [
+    "sql",
+    "power bi",
+    "sap",
+    "mrp",
+    "forecasting",
+    "inventory",
+    "excel",
+    "procurement"
+  ],
+  "locations": [
+    "boston",
+    "cambridge",
+    "somerville",
+    "massachusetts"
+  ],
+  "exclude_keywords": [
+    "director",
+    "vp",
+    "principal",
+    "senior manager",
+    "10+ years",
+    "8+ years",
+    "phd required"
+  ]
+}

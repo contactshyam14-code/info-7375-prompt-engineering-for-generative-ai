@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+# real résumés never leave this machine
+private/
+*.real.json
+# local scratch runs; copy the runs you submit into evidence/
+jobs/state/

@@ -1,0 +1,13 @@
+{"event": "run-labels", "labels": ["REPLAY from jobs/runs/2026-11-10T144309-live: no network calls", "SEEDED: real response for formlabs replaced with an empty list"]}
+{"t": 0.0, "event": "loop-start", "board": null, "budget": {"max_boards": 5, "max_requests": 10, "max_seconds": 60, "max_retries_per_board": 1, "retry_backoff_seconds": 2, "request_timeout_seconds": 15}, "boards": ["formlabs", "spotify", "palantir"]}
+{"t": 0.0, "event": "policy", "board": "formlabs", "url": "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true", "verdict": "allow", "reason": "GET boards-api.greenhouse.io allowed"}
+{"t": 0.0, "event": "request", "board": "formlabs", "url": "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true", "attempt": 1, "request_no": 1, "timeout": 15}
+{"t": 0.0, "event": "observed", "board": "formlabs", "count": 0, "bytes": 12}
+{"t": 0.0, "event": "warning", "board": "formlabs", "detail": "valid but EMPTY response; 0 is not verified"}
+{"t": 0.0, "event": "policy", "board": "spotify", "url": "https://api.lever.co/v0/postings/spotify?mode=json", "verdict": "allow", "reason": "GET api.lever.co allowed"}
+{"t": 0.0, "event": "request", "board": "spotify", "url": "https://api.lever.co/v0/postings/spotify?mode=json", "attempt": 1, "request_no": 2, "timeout": 15}
+{"t": 0.0, "event": "observed", "board": "spotify", "count": 86, "bytes": 827920}
+{"t": 0.0, "event": "policy", "board": "palantir", "url": "https://api.lever.co/v0/postings/palantir?mode=json", "verdict": "allow", "reason": "GET api.lever.co allowed"}
+{"t": 0.0, "event": "request", "board": "palantir", "url": "https://api.lever.co/v0/postings/palantir?mode=json", "attempt": 1, "request_no": 3, "timeout": 15}
+{"t": 0.031, "event": "observed", "board": "palantir", "count": 304, "bytes": 5927140}
+{"t": 0.031, "event": "loop-exit", "board": null, "exit_status": "finished", "reason": "all boards observed", "requests": 3}

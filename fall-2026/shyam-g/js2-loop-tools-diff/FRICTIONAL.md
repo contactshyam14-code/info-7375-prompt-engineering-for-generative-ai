@@ -1,0 +1,12 @@
+# FRICTIONAL — honest log, Job-Search Agent 2
+
+| # | Date / time | What happened | What I checked, changed, or learned | Accepted / modified / rejected from Claude | Commit / prompt / test |
+|---|---|---|---|---|---|
+| 1 | 11-10 ~1 pm | Claude Code wrote the agent code before I wrote GATE.md, which is out of the assignment's order | I learned the gate only works if it comes first. Writing it afterwards meant my GATE and the code disagreed in 6 places, and I only found them because I wrote the GATE without reading the code | Accepted the code, then made my GATE the authority | f38bc0e, 2f256e7 |
+| 2 | 11-10 | GATE section 5: the config can't narrow the read folder below the project root | The agent can read anything in the project, including my persona file. I accepted that for now, but it's broader than it needs to be | Accepted as a limit | config/policy.json |
+| 3 | 11-10 | My first hand labels were 3, 0, 0 because the pages were filtered. I recounted unfiltered. I had seen the API counts before recounting | A hand label is only independent if I count without knowing the answer. My recount matched the API, but I can't fully prove it wasn't influenced | — | c9be3ec |
+| 4 | 11-10 14:43 | The live check failed: formlabs 248→249, spotify 85→86, because my tolerance was 0. I kept the result and didn't edit the labels | Real boards change within minutes, so a tolerance of 0 makes the check fail on normal drift. I left it rather than loosen the check after seeing the result | — | 21f6151, evidence/01 |
+| 5 | 11-10 | I asked Claude to write the tests; it wrote them from my committed predictions | Because the tests came from my committed predictions, they could still disagree with the code, and 5 did. I can't claim I wrote the test code myself | Accepted; disclosed in SOURCES | 92c6a6d, c64bf5c |
+| 6 | 11-10 | Row 14: my prediction was wrong (a root-level state/ is outside jobs/) | I mixed up paths relative to the project with paths relative to jobs/. I kept the wrong prediction rather than edit it to match | — | test_14 |
+| 7 | 11-10 | 4 tests are still red: GATE status names ≠ code. Unresolved | My GATE used names (bad_name, ok_empty, failed) that the code never implemented. I ran out of time to choose between changing the code and amending the GATE | — | evidence/05 |
+| 8 | 11-10 21:39 | The redirect hole my GATE predicted was real. Patch accepted | The policy only checked the first URL, so a redirect could reach any host. Writing the wrong version down in advance is what got it tested | Accepted | 23888ac |

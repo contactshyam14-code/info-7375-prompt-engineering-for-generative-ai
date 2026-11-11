@@ -1,0 +1,8 @@
+{
+  "_note": "Same boards without the deliberate failure. Used for the finished-wrong-answer demo, so the run can end with exit=finished.",
+  "boards": [
+    {"board": "formlabs", "ats": "greenhouse"},
+    {"board": "spotify", "ats": "lever"},
+    {"board": "palantir", "ats": "lever"}
+  ]
+}

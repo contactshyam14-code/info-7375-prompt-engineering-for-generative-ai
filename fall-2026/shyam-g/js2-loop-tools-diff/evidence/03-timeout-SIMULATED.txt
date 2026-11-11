@@ -1,0 +1,8 @@
+2026-11-10T14:43:21-05:00  label=SIMULATED-timeout  exit=incomplete  (failed boards: ['spotify', 'nosuchboard-js2-xyz'])
+  greenhouse formlabs               ok              count=249 attempts=1 new=0 relevant_now=1
+  lever      spotify                error           count=None attempts=2  error: gave up after 2 attempts: SIMULATED timeout for spotify (--simulate-timeout)
+  lever      palantir               ok              count=304 attempts=1 new=0 relevant_now=0
+  greenhouse nosuchboard-js2-xyz    error           count=None attempts=1  error: HTTP 404
+  requests=5  elapsed=8.828s  saved: jobs/runs/2026-11-10T144321-SIMULATED-timeout/
+  independent check:  python check.py jobs/runs/2026-11-10T144321-SIMULATED-timeout
+agent rc=2

@@ -1,0 +1,144 @@
+Run: 2026-11-10 15:43 EST  command: .venv\Scripts\python.exe -m pytest tests -v
+============================= test session starts =============================
+platform win32 -- Python 3.12.5, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\Shyam\JOB_Agent\js2-loop-tools-diff\.venv\Scripts\python.exe
+rootdir: C:\Users\Shyam\JOB_Agent\js2-loop-tools-diff
+collecting ... collected 25 items
+
+tests/test_boundary.py::test_01_allowed_host PASSED                      [  4%]
+tests/test_boundary.py::test_02_off_list_host PASSED                     [  8%]
+tests/test_boundary.py::test_03_lookalike_host PASSED                    [ 12%]
+tests/test_boundary.py::test_04_post_denied PASSED                       [ 16%]
+tests/test_boundary.py::test_05_dotdot_escape PASSED                     [ 20%]
+tests/test_boundary.py::test_06_prefix_trick_jobs_evil PASSED            [ 24%]
+tests/test_boundary.py::test_07_symlink_escape PASSED                    [ 28%]
+tests/test_boundary.py::test_08_read_inside_project PASSED               [ 32%]
+tests/test_boundary.py::test_09_read_outside_project PASSED              [ 36%]
+tests/test_boundary.py::test_10_same_path_read_then_write PASSED         [ 40%]
+tests/test_boundary.py::test_11_overwrite_not_approved PASSED            [ 44%]
+tests/test_boundary.py::test_12_overwrite_approved PASSED                [ 48%]
+tests/test_boundary.py::test_13_forbidden_actions[email] PASSED          [ 52%]
+tests/test_boundary.py::test_13_forbidden_actions[apply] PASSED          [ 56%]
+tests/test_boundary.py::test_13_forbidden_actions[login] PASSED          [ 60%]
+tests/test_boundary.py::test_14_state_ambiguity FAILED                   [ 64%]
+tests/test_loop.py::test_6_1_404_is_bad_name_not_zero FAILED             [ 68%]
+tests/test_loop.py::test_6_2_empty_list_is_ok_empty_one_request FAILED   [ 72%]
+tests/test_loop.py::test_6_3_503_retried_once_then_failed FAILED         [ 76%]
+tests/test_loop.py::test_6_4_board_budget PASSED                         [ 80%]
+tests/test_loop.py::test_6_5_time_budget_is_budget_exhausted PASSED      [ 84%]
+tests/test_loop.py::test_6_6a_post_denied PASSED                         [ 88%]
+tests/test_loop.py::test_6_6b_unlisted_host_denied PASSED                [ 92%]
+tests/test_loop.py::test_6_6c_redirect_to_unlisted_host_not_followed FAILED [ 96%]
+tests/test_loop.py::test_6_7_failed_board_still_reported PASSED          [100%]
+
+================================== FAILURES ===================================
+___________________________ test_14_state_ambiguity ___________________________
+
+policy = <js2.policy.Policy object at 0x0000017FF0ADB290>
+project = WindowsPath('C:/Users/Shyam/AppData/Local/Temp/pytest-of-Shyam/pytest-2/test_14_state_ambiguity0')
+
+    def test_14_state_ambiguity(policy, project):
+        (project / "state").mkdir()
+        (project / "state" / "seen.json").write_text("{}")
+>       assert policy.check_write("state/seen.json").verdict == "allow"
+E       AssertionError: assert 'deny' == 'allow'
+E         
+E         - allow
+E         + deny
+
+tests\test_boundary.py:98: AssertionError
+______________________ test_6_1_404_is_bad_name_not_zero ______________________
+
+budget = Budget(max_boards=5, max_requests=8, max_seconds=60, max_retries_per_board=1, retry_backoff_seconds=0, request_timeout_seconds=5)
+policy = <js2.policy.Policy object at 0x0000017FF0ADBC80>
+fake_http = <function fake_http.<locals>._make at 0x0000017FF0BA2840>
+
+    def test_6_1_404_is_bad_name_not_zero(budget, policy, fake_http):
+        out = run_loop([gh("nope")], budget, policy, fake_http({"/nope/": Permanent("HTTP 404")}), **NO_SLEEP)
+        r = out["results"][0]
+        assert r.count is None
+>       assert r.status == "bad_name"
+E       AssertionError: assert 'error' == 'bad_name'
+E         
+E         - bad_name
+E         + error
+
+tests\test_loop.py:28: AssertionError
+_________________ test_6_2_empty_list_is_ok_empty_one_request _________________
+
+budget = Budget(max_boards=5, max_requests=8, max_seconds=60, max_retries_per_board=1, retry_backoff_seconds=0, request_timeout_seconds=5)
+policy = <js2.policy.Policy object at 0x0000017FF0ADED80>
+fake_http = <function fake_http.<locals>._make at 0x0000017FF0BA2C00>
+
+    def test_6_2_empty_list_is_ok_empty_one_request(budget, policy, fake_http):
+        http = fake_http({"/quiet/": EMPTY_GH})
+        out = run_loop([gh("quiet")], budget, policy, http, **NO_SLEEP)
+        assert len(http.calls) == 1
+>       assert out["results"][0].status == "ok_empty"
+E       AssertionError: assert 'ok' == 'ok_empty'
+E         
+E         - ok_empty
+E         + ok
+
+tests\test_loop.py:36: AssertionError
+____________________ test_6_3_503_retried_once_then_failed ____________________
+
+budget = Budget(max_boards=5, max_requests=8, max_seconds=60, max_retries_per_board=1, retry_backoff_seconds=0, request_timeout_seconds=5)
+policy = <js2.policy.Policy object at 0x0000017FF0ADF6E0>
+fake_http = <function fake_http.<locals>._make at 0x0000017FF0BA2E80>
+
+    def test_6_3_503_retried_once_then_failed(budget, policy, fake_http):
+        http = fake_http({"/flaky/": Transient("HTTP 503")})
+        out = run_loop([gh("flaky")], budget, policy, http, **NO_SLEEP)
+        assert len(http.calls) == 2
+        assert out["results"][0].count is None
+>       assert out["results"][0].status == "failed"
+E       AssertionError: assert 'error' == 'failed'
+E         
+E         - failed
+E         + error
+
+tests\test_loop.py:45: AssertionError
+______________ test_6_6c_redirect_to_unlisted_host_not_followed _______________
+
+    def test_6_6c_redirect_to_unlisted_host_not_followed():
+        hits = {"b": 0}
+    
+        class B(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                hits["b"] += 1
+                self.send_response(200); self.end_headers(); self.wfile.write(b'{"jobs": []}')
+    
+            def log_message(self, *a):
+                pass
+    
+        srv_b = http.server.HTTPServer(("127.0.0.1", 0), B)
+    
+        class A(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                self.send_response(302)
+                self.send_header("Location", f"http://127.0.0.1:{srv_b.server_port}/stolen")
+                self.end_headers()
+    
+            def log_message(self, *a):
+                pass
+    
+        srv_a = http.server.HTTPServer(("127.0.0.1", 0), A)
+        for s in (srv_a, srv_b):
+            threading.Thread(target=s.serve_forever, daemon=True).start()
+        try:
+            try:
+                http_get(f"http://127.0.0.1:{srv_a.server_port}/jobs", timeout=5)
+            except (Permanent, Transient):
+                pass  # refusing the redirect with an error is acceptable
+>           assert hits["b"] == 0, "redirect was followed to a host the policy never checked"
+E           AssertionError: redirect was followed to a host the policy never checked
+E           assert 1 == 0
+
+tests\test_loop.py:115: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_boundary.py::test_14_state_ambiguity - AssertionError: asse...
+FAILED tests/test_loop.py::test_6_1_404_is_bad_name_not_zero - AssertionError...
+FAILED tests/test_loop.py::test_6_2_empty_list_is_ok_empty_one_request - Asse...
+FAILED tests/test_loop.py::test_6_3_503_retried_once_then_failed - AssertionE...
+FAILED tests/test_loop.py::test_6_6c_redirect_to_unlisted_host_not_followed
+======================== 5 failed, 20 passed in 1.38s =========================

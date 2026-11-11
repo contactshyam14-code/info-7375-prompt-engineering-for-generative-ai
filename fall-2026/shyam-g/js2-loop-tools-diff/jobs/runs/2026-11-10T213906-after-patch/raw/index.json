@@ -1,0 +1,31 @@
+{
+  "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true": {
+    "board": "formlabs",
+    "ats": "greenhouse",
+    "status": "ok",
+    "attempts": 1,
+    "file": "greenhouse-formlabs.json"
+  },
+  "https://api.lever.co/v0/postings/spotify?mode=json": {
+    "board": "spotify",
+    "ats": "lever",
+    "status": "ok",
+    "attempts": 1,
+    "file": "lever-spotify.json"
+  },
+  "https://api.lever.co/v0/postings/palantir?mode=json": {
+    "board": "palantir",
+    "ats": "lever",
+    "status": "ok",
+    "attempts": 1,
+    "file": "lever-palantir.json"
+  },
+  "https://boards-api.greenhouse.io/v1/boards/nosuchboard-js2-xyz/jobs?content=true": {
+    "board": "nosuchboard-js2-xyz",
+    "ats": "greenhouse",
+    "status": "error",
+    "attempts": 1,
+    "error": "HTTP 404",
+    "error_kind": "permanent"
+  }
+}

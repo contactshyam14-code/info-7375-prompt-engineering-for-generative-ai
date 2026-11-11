@@ -1,0 +1,9 @@
+{
+  "_note": "Boards the loop watches, in order. 'expect' documents intent only; the code never reads it.",
+  "boards": [
+    {"board": "formlabs", "ats": "greenhouse", "expect": "ok (carried over from JS1)"},
+    {"board": "spotify", "ats": "lever", "expect": "ok"},
+    {"board": "palantir", "ats": "lever", "expect": "ok"},
+    {"board": "nosuchboard-js2-xyz", "ats": "greenhouse", "expect": "DELIBERATE FAILURE: bad board name, HTTP 404"}
+  ]
+}

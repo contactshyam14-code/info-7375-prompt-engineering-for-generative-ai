@@ -1,0 +1,21 @@
+2026-11-10T14:43:09-05:00  label=live  exit=incomplete  (failed boards: ['nosuchboard-js2-xyz'])
+  greenhouse formlabs               ok              count=249 attempts=1 baseline (no earlier state) relevant_now=1
+  lever      spotify                ok              count=86 attempts=1 baseline (no earlier state) relevant_now=0
+  lever      palantir               ok              count=304 attempts=1 baseline (no earlier state) relevant_now=0
+  greenhouse nosuchboard-js2-xyz    error           count=None attempts=1  error: HTTP 404
+  requests=4  elapsed=9.36s  saved: jobs/runs/2026-11-10T144309-live/
+  independent check:  python check.py jobs/runs/2026-11-10T144309-live
+agent rc=2
+
+run: jobs/runs/2026-11-10T144309-live  label=live  agent exit=incomplete
+run labels: ['live']
+board                  status           agent    raw   hand  verdict
+formlabs               ok                 249    249    248  FLAG: differs from hand label (agent 249, hand 248, tolerance 0)
+spotify                ok                  86     86     85  FLAG: differs from hand label (agent 86, hand 85, tolerance 0)
+palantir               ok                 304    304    304  ok
+nosuchboard-js2-xyz    error             None   None      -  UNCHECKED: hand_count is blank
+
+INDEPENDENT CHECK: FAILED
+  - formlabs: FLAG: differs from hand label (agent 249, hand 248, tolerance 0)
+  - spotify: FLAG: differs from hand label (agent 86, hand 85, tolerance 0)
+check rc=1

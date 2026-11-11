@@ -1,0 +1,12 @@
+{
+  "_note": "Decided in GATE.md on 2026-11-10; GATE.md is the authority.",
+  "decided_by": "Shyam Sundar Jayaraman Gopalakrishnan",
+  "decided_on": "2026-11-10",
+  "allowed_hosts": ["boards-api.greenhouse.io", "api.lever.co"],
+  "allowed_methods": ["GET"],
+  "read_root": ".",
+  "write_root": "jobs",
+  "overwrite_without_approval": ["state/*.json"],
+  "allowed_actions": ["fetch_board", "read_file", "write_output"],
+  "forbidden_actions": ["apply", "email", "message", "login", "submit_form", "post"]
+}

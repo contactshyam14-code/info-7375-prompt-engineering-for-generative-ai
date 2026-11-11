@@ -1,0 +1,19 @@
+{"event": "run-labels", "labels": ["live"]}
+{"t": 0.0, "event": "loop-start", "board": null, "budget": {"max_boards": 5, "max_requests": 10, "max_seconds": 60, "max_retries_per_board": 1, "retry_backoff_seconds": 2, "request_timeout_seconds": 15}, "boards": ["formlabs", "spotify", "palantir", "nosuchboard-js2-xyz"]}
+{"t": 0.0, "event": "policy", "board": "formlabs", "url": "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true", "verdict": "allow", "reason": "GET boards-api.greenhouse.io allowed"}
+{"t": 0.0, "event": "request", "board": "formlabs", "url": "https://boards-api.greenhouse.io/v1/boards/formlabs/jobs?content=true", "attempt": 1, "request_no": 1, "timeout": 15}
+{"t": 0.609, "event": "observed", "board": "formlabs", "count": 249, "bytes": 2300259}
+{"t": 0.609, "event": "policy", "board": "spotify", "url": "https://api.lever.co/v0/postings/spotify?mode=json", "verdict": "allow", "reason": "GET api.lever.co allowed"}
+{"t": 0.609, "event": "request", "board": "spotify", "url": "https://api.lever.co/v0/postings/spotify?mode=json", "attempt": 1, "request_no": 2, "timeout": 15}
+{"t": 0.609, "event": "transient-error", "board": "spotify", "attempt": 1, "error": "SIMULATED timeout for spotify (--simulate-timeout)"}
+{"t": 0.609, "event": "retry", "board": "spotify", "after_seconds": 2}
+{"t": 2.625, "event": "request", "board": "spotify", "url": "https://api.lever.co/v0/postings/spotify?mode=json", "attempt": 2, "request_no": 3, "timeout": 15}
+{"t": 2.625, "event": "transient-error", "board": "spotify", "attempt": 2, "error": "SIMULATED timeout for spotify (--simulate-timeout)"}
+{"t": 2.625, "event": "board-failed", "board": "spotify", "error": "gave up after 2 attempts: SIMULATED timeout for spotify (--simulate-timeout)"}
+{"t": 2.625, "event": "policy", "board": "palantir", "url": "https://api.lever.co/v0/postings/palantir?mode=json", "verdict": "allow", "reason": "GET api.lever.co allowed"}
+{"t": 2.625, "event": "request", "board": "palantir", "url": "https://api.lever.co/v0/postings/palantir?mode=json", "attempt": 1, "request_no": 4, "timeout": 15}
+{"t": 8.672, "event": "observed", "board": "palantir", "count": 304, "bytes": 5927140}
+{"t": 8.672, "event": "policy", "board": "nosuchboard-js2-xyz", "url": "https://boards-api.greenhouse.io/v1/boards/nosuchboard-js2-xyz/jobs?content=true", "verdict": "allow", "reason": "GET boards-api.greenhouse.io allowed"}
+{"t": 8.672, "event": "request", "board": "nosuchboard-js2-xyz", "url": "https://boards-api.greenhouse.io/v1/boards/nosuchboard-js2-xyz/jobs?content=true", "attempt": 1, "request_no": 5, "timeout": 15}
+{"t": 8.828, "event": "board-failed", "board": "nosuchboard-js2-xyz", "error": "HTTP 404", "detail": "permanent: no retry"}
+{"t": 8.828, "event": "loop-exit", "board": null, "exit_status": "incomplete", "reason": "failed boards: ['spotify', 'nosuchboard-js2-xyz']", "requests": 5}

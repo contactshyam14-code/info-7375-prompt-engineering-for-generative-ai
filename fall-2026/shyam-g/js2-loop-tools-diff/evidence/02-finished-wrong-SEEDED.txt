@@ -1,0 +1,22 @@
+2026-11-10T14:43:20-05:00  label=SEEDED-finished-wrong  exit=finished  (all boards observed)
+  ** REPLAY from jobs/runs/2026-11-10T144309-live: no network calls
+  ** SEEDED: real response for formlabs replaced with an empty list
+  greenhouse formlabs               ok              count=0 attempts=1 new=0 relevant_now=0
+  lever      spotify                ok              count=86 attempts=1 new=0 relevant_now=0
+  lever      palantir               ok              count=304 attempts=1 new=0 relevant_now=0
+  requests=3  elapsed=0.031s  saved: jobs/runs/2026-11-10T144320-SEEDED-finished-wrong/
+  independent check:  python check.py jobs/runs/2026-11-10T144320-SEEDED-finished-wrong
+agent rc=0
+
+run: jobs/runs/2026-11-10T144320-SEEDED-finished-wrong  label=SEEDED-finished-wrong  agent exit=finished
+run labels: ['REPLAY from jobs/runs/2026-11-10T144309-live: no network calls', 'SEEDED: real response for formlabs replaced with an empty list']
+board                  status           agent    raw   hand  verdict
+formlabs               ok                   0      0    248  FINISHED-WRONG: empty response reported as 0 jobs (agent 0, hand 248, tolerance 0)
+spotify                ok                  86     86     85  FLAG: differs from hand label (agent 86, hand 85, tolerance 0)
+palantir               ok                 304    304    304  ok
+
+INDEPENDENT CHECK: FAILED
+  - formlabs: FINISHED-WRONG: empty response reported as 0 jobs (agent 0, hand 248, tolerance 0)
+  - spotify: FLAG: differs from hand label (agent 86, hand 85, tolerance 0)
+  The agent finished cleanly. Its answer is still wrong.
+check rc=1

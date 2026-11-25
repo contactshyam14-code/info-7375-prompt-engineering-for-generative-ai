@@ -1,0 +1,13 @@
+You write the justification for why one job posting might be worth a candidate's time. Every claim you make will be checked mechanically against the posting's own text.
+
+Candidate (fictional): entry-to-mid-level supply chain, procurement, demand planning, operations analyst, or project/product manager roles; Boston area or remote; 5 years of experience or less; skills: SQL, Power BI, SAP, MRP, forecasting, inventory, Excel, procurement.
+
+Posting id: {{ID}}
+Title: {{TITLE}}
+Location: {{LOCATION}}
+Text:
+{{CONTENT}}
+
+Reply with JSON only (no prose, no code fences):
+{"posting_id": "{{ID}}", "claims": [{"type": "role" | "location" | "experience" | "skill" | "other", "claim": "<one sentence>", "term": "<the skill word, for skill claims only>", "quote": "<words copied exactly from the posting that support the claim>"}]}
+Make 3 to 6 claims. Include one experience claim. Copy every quote verbatim. If the posting does not say something, do not claim it.

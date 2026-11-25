@@ -1,0 +1,7 @@
+{
+ "posting_id": "8334912",
+ "asked_at": "2026-11-23T13:51:54-05:00",
+ "via": "claude -p --tools '' (Claude Code CLI)",
+ "prompt_file": "prompts/justify.txt",
+ "raw_response": "{\"posting_id\": \"8334912\", \"claims\": [{\"type\": \"role\", \"claim\": \"The role is a program manager position, which matches the candidate's interest in project/product manager roles.\", \"quote\": \"Materials Program Manager\"}, {\"type\": \"location\", \"claim\": \"The job is located in Somerville, MA, which is in the Boston area.\", \"quote\": \"Somerville, MA\"}, {\"type\": \"experience\", \"claim\": \"The posting asks for 5+ years of experience, which sits at the upper edge of the candidate's 5-years-or-less range and may be a stretch.\", \"quote\": \"5+ years of experience in an engineering or R&D environment, with demonstrated experience in project or program management.\"}, {\"type\": \"skill\", \"claim\": \"The role involves working cross-functionally with supply chain personnel, which connects to the candidate's supply chain background.\", \"term\": \"supply chain\", \"quote\": \"Ability to work cross-functionally between product, engineering, production, and supply chain personnel.\"}, {\"type\": \"other\", \"claim\": \"The posting encourages applicants who do not meet every requirement to apply.\", \"quote\": \"Even if you don't check every box, but see yourself contributing, please apply.\"}]}"
+}

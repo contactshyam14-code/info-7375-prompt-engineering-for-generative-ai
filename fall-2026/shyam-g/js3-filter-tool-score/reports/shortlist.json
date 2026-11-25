@@ -1,0 +1,900 @@
+[
+ {
+  "id": "8074475",
+  "title": "FP&A Analyst",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8074475/apply/?gh_jid=8074475",
+  "score": 5,
+  "gates": {
+   "role": {
+    "label": "insufficient",
+    "why": "title has no strong role word; the title alone can't settle it",
+    "evidence": "FP&A Analyst"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 1 ≤ 5",
+    "evidence": "1-3 years of progressive FP&A, data analytics, business intelligence, or strategic finance experience"
+   }
+  },
+  "verdict": {
+   "verdict": "I cannot tell",
+   "because": [
+    "role"
+   ]
+  },
+  "claude_asked_at": "2026-11-23T13:51:54-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "experience",
+    "claim": "The role asks for 1-3 years of experience, which fits within the candidate's 5-years-or-less range.",
+    "quote": "1-3 years of progressive FP&A, data analytics, business intelligence, or strategic finance experience",
+    "label": "supported",
+    "why": "largest stated figure 1 ≤ 5",
+    "evidence": "1-3 years of progressive FP&A, data analytics, business intelligence, or strategic finance experience"
+   },
+   {
+    "type": "location",
+    "claim": "The role is based in Somerville, MA, which is in the Boston area.",
+    "quote": "Somerville, MA",
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   {
+    "type": "skill",
+    "claim": "The posting explicitly calls for SQL, a skill the candidate has.",
+    "term": "SQL",
+    "quote": "drive automated reporting using SQL",
+    "label": "supported",
+    "why": "'SQL' named in a duty/requirement sentence",
+    "evidence": "drive automated reporting using SQL"
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves owning inventory forecasting models, matching the candidate's inventory and forecasting skills.",
+    "term": "inventory",
+    "quote": "Build and maintain financial models, for example, inventory and COGS forecasts grounded in unit economics",
+    "label": "supported",
+    "why": "'inventory' named in a duty/requirement sentence",
+    "evidence": "Build and maintain financial models, for example, inventory and COGS forecasts grounded in unit economics"
+   },
+   {
+    "type": "other",
+    "claim": "The role involves cross-functional partnership with Supply Chain, aligning with the candidate's supply chain background.",
+    "quote": "Partner with leaders in Finance, Sales, Marketing, Product, Engineering, and Supply Chain to define problems",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Partner with leaders in Finance, Sales, Marketing, Product, Engineering, and Supply Chain to define problems"
+   },
+   {
+    "type": "skill",
+    "claim": "The posting asks for ERP systems experience, which the candidate's SAP background relates to, though NetSuite is strongly preferred.",
+    "term": "ERP",
+    "quote": "Strong technical proficiency with ERP systems (NetSuite strongly preferred), SQL, and BI/visualization tools",
+    "label": "insufficient",
+    "why": "'ERP' is nice-to-have, not required",
+    "evidence": "Strong technical proficiency with ERP systems (NetSuite strongly preferred), SQL, and BI/visualization tools"
+   }
+  ]
+ },
+ {
+  "id": "8249635",
+  "title": "Fulfillment Coordinator - May 2027 Graduates",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8249635/apply/?gh_jid=8249635",
+  "score": 5,
+  "gates": {
+   "role": {
+    "label": "insufficient",
+    "why": "title has no strong role word; the title alone can't settle it",
+    "evidence": "Fulfillment Coordinator - May 2027 Graduates"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   }
+  },
+  "verdict": {
+   "verdict": "I cannot tell",
+   "because": [
+    "role",
+    "experience"
+   ]
+  },
+  "claude_asked_at": "2026-11-23T13:51:54-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is an entry-level supply chain operations position targeted at new graduates, aligning with the candidate's entry-to-mid-level supply chain focus.",
+    "quote": "Fulfillment Coordinator - May 2027 Graduates",
+    "label": "insufficient",
+    "why": "title has no strong role word; the title alone can't settle it",
+    "evidence": "Fulfillment Coordinator - May 2027 Graduates"
+   },
+   {
+    "type": "location",
+    "claim": "The job is located in Somerville, MA, which is in the Boston area.",
+    "quote": "Somerville, MA",
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for a degree in Supply Chain or related field and treats fulfillment experience as a bonus rather than a requirement, fitting a candidate with 5 years or less of experience.",
+    "quote": "Bachelor’s degree in Supply Chain or a related field; equivalent operational experience will also be considered.",
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves inventory reconciliation work, matching the candidate's inventory skill.",
+    "term": "inventory",
+    "quote": "Implement inventory reconciliation tasks by assisting in weekly cycle counts and investigating discrepancies between physical warehouse stock and digital records.",
+    "label": "insufficient",
+    "why": "'inventory' occurs but not as a duty or requirement",
+    "evidence": "Implement inventory reconciliation tasks by assisting in weekly cycle counts and investigating discrepancies between physical warehouse stock and digital records."
+   },
+   {
+    "type": "skill",
+    "claim": "Excel is listed as a bonus skill, matching the candidate's Excel experience.",
+    "term": "Excel",
+    "quote": "Basic proficiency in Excel for data entry and simple report generation.",
+    "label": "insufficient",
+    "why": "'Excel' is nice-to-have, not required",
+    "evidence": "Basic proficiency in Excel for data entry and simple report generation."
+   },
+   {
+    "type": "other",
+    "claim": "The posting states a base pay range and includes equity for every employee.",
+    "quote": "The annual base pay range for this role is: $65,000 — $75,000 USD",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "The annual base pay range for this role is: $65,000 — $75,000 USD"
+   }
+  ]
+ },
+ {
+  "id": "8281472",
+  "title": "Global Sourcing Manager",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8281472/apply/?gh_jid=8281472",
+  "score": 5,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['sourcing']",
+    "evidence": "Global Sourcing Manager"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 2 ≤ 5",
+    "evidence": "1-5 years post graduate experience"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:51:54-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a procurement-focused sourcing position, matching the candidate's target of procurement roles.",
+    "quote": "Work directly with our suppliers and contract manufacturers to source and procure material in time for NPI builds",
+    "label": "supported",
+    "why": "title has role word(s) ['sourcing']",
+    "evidence": "Global Sourcing Manager"
+   },
+   {
+    "type": "location",
+    "claim": "The job is located in Somerville, MA, which is in the Boston area.",
+    "quote": "Somerville, MA",
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for 1-5 years of experience, which fits a candidate with 5 years or less.",
+    "quote": "1-5 years post graduate experience working in a strategic sourcing,manufacturing, or supplier quality engineering role",
+    "label": "supported",
+    "why": "largest stated figure 2 ≤ 5",
+    "evidence": "1-5 years post graduate experience"
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves supplier negotiation and contract execution, which aligns with the candidate's procurement skill.",
+    "term": "procurement",
+    "quote": "Manage supplier selection, negotiation, and contract execution to secure optimal value, quality, and risk mitigation",
+    "label": "insufficient",
+    "why": "quote does not name 'procurement'",
+    "evidence": "Manage supplier selection, negotiation, and contract execution to secure optimal value, quality, and risk mitigation"
+   },
+   {
+    "type": "skill",
+    "claim": "Advanced spreadsheet use is listed as a bonus skill, matching the candidate's Excel experience.",
+    "term": "Excel",
+    "quote": "Advanced use of spreadsheets",
+    "label": "insufficient",
+    "why": "quote does not name 'Excel'",
+    "evidence": "Advanced use of spreadsheets"
+   },
+   {
+    "type": "other",
+    "claim": "The posting lists data analysis as a desired skill, which fits the candidate's analytical background.",
+    "quote": "High attention to detail and skills in data analysis",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "High attention to detail and skills in data analysis"
+   }
+  ]
+ },
+ {
+  "id": "8334912",
+  "title": "Materials Program Manager",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8334912/apply/?gh_jid=8334912",
+  "score": 4,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Materials Program Manager"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:51:54-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a program manager position, which matches the candidate's interest in project/product manager roles.",
+    "quote": "Materials Program Manager",
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Materials Program Manager"
+   },
+   {
+    "type": "location",
+    "claim": "The job is located in Somerville, MA, which is in the Boston area.",
+    "quote": "Somerville, MA",
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for 5+ years of experience, which sits at the upper edge of the candidate's 5-years-or-less range and may be a stretch.",
+    "quote": "5+ years of experience in an engineering or R&D environment, with demonstrated experience in project or program management.",
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves working cross-functionally with supply chain personnel, which connects to the candidate's supply chain background.",
+    "term": "supply chain",
+    "quote": "Ability to work cross-functionally between product, engineering, production, and supply chain personnel.",
+    "label": "insufficient",
+    "why": "'supply chain' names people the job works with, not a skill it uses",
+    "evidence": "Ability to work cross-functionally between product, engineering, production, and supply chain personnel."
+   },
+   {
+    "type": "other",
+    "claim": "The posting encourages applicants who do not meet every requirement to apply.",
+    "quote": "Even if you don't check every box, but see yourself contributing, please apply.",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Even if you don't check every box, but see yourself contributing, please apply."
+   }
+  ]
+ },
+ {
+  "id": "8335124",
+  "title": "Materials Program Manager",
+  "location": "Boston, MA",
+  "url": "https://careers.formlabs.com/job/8335124/apply/?gh_jid=8335124",
+  "score": 4,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Materials Program Manager"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:52:03-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a program management position, matching the candidate's interest in project/product manager roles.",
+    "quote": "Use disciplined project management methodology to define scope, develop program plans which deliver the program within cost and schedule",
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Materials Program Manager"
+   },
+   {
+    "type": "location",
+    "claim": "The job is located in Boston, MA, within the candidate's preferred area.",
+    "quote": "Boston, MA",
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for 5+ years of experience, which is at the top edge of the candidate's 5-years-or-less range, though it also encourages applicants who don't meet every requirement.",
+    "quote": "5+ years of experience in an engineering or R&D environment, with demonstrated experience in project or program management.",
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves working cross-functionally with supply chain personnel, which connects to the candidate's supply chain background.",
+    "term": "supply chain",
+    "quote": "Ability to work cross-functionally between product, engineering, production, and supply chain personnel.",
+    "label": "insufficient",
+    "why": "'supply chain' names people the job works with, not a skill it uses",
+    "evidence": "Ability to work cross-functionally between product, engineering, production, and supply chain personnel."
+   },
+   {
+    "type": "other",
+    "claim": "The posting explicitly invites applicants who don't meet every requirement.",
+    "quote": "Even if you don't check every box, but see yourself contributing, please apply.",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Even if you don't check every box, but see yourself contributing, please apply."
+   },
+   {
+    "type": "other",
+    "claim": "The stated base pay range is $100,000 to $150,000 USD.",
+    "quote": "The annual base pay range for this role is: $100,000 — $150,000 USD",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "The annual base pay range for this role is: $100,000 — $150,000 USD"
+   }
+  ]
+ },
+ {
+  "id": "8335610",
+  "title": "Mechanical Project Manager",
+  "location": "Boston, MA",
+  "url": "https://careers.formlabs.com/job/8335610/apply/?gh_jid=8335610",
+  "score": 4,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['project manager']",
+    "evidence": "Mechanical Project Manager"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   "experience": {
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   }
+  },
+  "verdict": {
+   "verdict": "I cannot tell",
+   "because": [
+    "experience"
+   ]
+  },
+  "claude_asked_at": "2026-11-23T13:52:03-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "This is a project manager role embedded in the mechanical engineering team, which fits the candidate's target of project/product manager roles.",
+    "quote": "Broadly support the mechanical engineering team and mechanical engineering manager as project manager embedded in that team",
+    "label": "supported",
+    "why": "title has role word(s) ['project manager']",
+    "evidence": "Mechanical Project Manager"
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves hands-on inventory management for prototype builds, which matches the candidate's inventory skills.",
+    "term": "inventory",
+    "quote": "Manage inventory for prototype and integration builds including receiving parts, managing incoming quality control, stocking parts and prepping for builds.",
+    "label": "supported",
+    "why": "'inventory' named in a duty/requirement sentence",
+    "evidence": "Manage inventory for prototype and integration builds including receiving parts, managing incoming quality control, stocking parts and prepping for builds."
+   },
+   {
+    "type": "skill",
+    "claim": "Data analysis and spreadsheet skills are listed as a bonus, which suits the candidate's Excel and analytics background.",
+    "term": "spreadsheet",
+    "quote": "Data analysis and spreadsheet wizardry",
+    "label": "insufficient",
+    "why": "'spreadsheet' is nice-to-have, not required",
+    "evidence": "Data analysis and spreadsheet wizardry"
+   },
+   {
+    "type": "other",
+    "claim": "Managing the Bill of Materials supports ordering and cost analysis, work close to the candidate's procurement and supply chain focus.",
+    "quote": "making sure it is up to date and usable for ordering, cost analysis and useful for tracking development status",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "making sure it is up to date and usable for ordering, cost analysis and useful for tracking development status"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting states no minimum years of experience and encourages applicants who don't meet every requirement, so a candidate with 5 years or less is not excluded.",
+    "quote": "You don’t need to check every box to apply for a role.",
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   },
+   {
+    "type": "other",
+    "claim": "The posting discloses a base pay range of $90,000 to $120,000.",
+    "quote": "The annual base pay range for this role is: $90,000 — $120,000 USD",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "The annual base pay range for this role is: $90,000 — $120,000 USD"
+   }
+  ]
+ },
+ {
+  "id": "8103603",
+  "title": "NPI Operations Program Manager",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8103603/apply/?gh_jid=8103603",
+  "score": 6,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "NPI Operations Program Manager"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   }
+  },
+  "verdict": {
+   "verdict": "I cannot tell",
+   "because": [
+    "experience"
+   ]
+  },
+  "claude_asked_at": "2026-11-23T13:52:03-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a program management position leading cross-functional operations work that includes supply chain, which fits the candidate's target of project/program manager and supply chain roles.",
+    "quote": "Lead cross-functional teams (supply chain, manufacturing engineering, design, and logistics) to deliver against program requirements and resolve critical blockers.",
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "NPI Operations Program Manager"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for operations experience in areas such as supply chain or procurement and does not state a minimum number of years, so it may be open to a candidate with 5 years or less.",
+    "quote": "Experience working in Operations; program management, manufacturing, supply chain, vendor management, procurement or similar environment",
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   },
+   {
+    "type": "skill",
+    "claim": "Procurement is explicitly listed as a relevant background, matching one of the candidate's skills.",
+    "term": "procurement",
+    "quote": "vendor management, procurement or similar environment",
+    "label": "insufficient",
+    "why": "'procurement' occurs but not as a duty or requirement",
+    "evidence": "vendor management, procurement or similar environment"
+   },
+   {
+    "type": "other",
+    "claim": "The role involves managing supplier relationships, which aligns with the candidate's procurement focus.",
+    "quote": "Build and manage relationships with Tier 1 and Tier 2 suppliers to enable strong communication which yields strong partnerships and predictable execution.",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Build and manage relationships with Tier 1 and Tier 2 suppliers to enable strong communication which yields strong partnerships and predictable execution."
+   },
+   {
+    "type": "other",
+    "claim": "The posting encourages applicants who do not meet every listed requirement to apply anyway.",
+    "quote": "Even if you don't check every box, but see yourself contributing, please apply.",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Even if you don't check every box, but see yourself contributing, please apply."
+   },
+   {
+    "type": "other",
+    "claim": "The posting states a base pay range starting at $100,000 and also includes equity.",
+    "quote": "The annual base pay range for this role is: $100,000 — $186,000 USD",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "The annual base pay range for this role is: $100,000 — $186,000 USD"
+   }
+  ]
+ },
+ {
+  "id": "8311099",
+  "title": "Strategy & Operations Analyst",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8311099/apply/?gh_jid=8311099",
+  "score": 5,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['operations analyst', 'strategy & operations']",
+    "evidence": "Strategy & Operations Analyst"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 2 ≤ 5",
+    "evidence": "Experience: 2–4 years"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:52:04-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is an operations analyst position aimed at early-career candidates, matching the candidate's target of operations analyst roles.",
+    "quote": "This is a role for someone early in their career with a very strong ability to learn quickly",
+    "label": "supported",
+    "why": "title has role word(s) ['operations analyst', 'strategy & operations']",
+    "evidence": "Strategy & Operations Analyst"
+   },
+   {
+    "type": "location",
+    "claim": "The role is based in Somerville, MA, within the Boston area, on a hybrid schedule.",
+    "quote": "This role is based in our Somerville, MA office and will be a hybrid role with the expectation of at least 3 days a week in office.",
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for 2–4 years of experience, which falls within the candidate's 5 years or less.",
+    "quote": "Experience: 2–4 years in consulting, business operations, strategy & operations, or a similar analytical role.",
+    "label": "supported",
+    "why": "largest stated figure 2 ≤ 5",
+    "evidence": "Experience: 2–4 years"
+   },
+   {
+    "type": "skill",
+    "claim": "SQL is a core requirement of the role, matching the candidate's SQL skill.",
+    "term": "SQL",
+    "quote": "Comfortable writing SQL and working in Python or a similar scripting language",
+    "label": "supported",
+    "why": "'SQL' named in a duty/requirement sentence",
+    "evidence": "Comfortable writing SQL and working in Python or a similar scripting language"
+   },
+   {
+    "type": "skill",
+    "claim": "The posting lists software procurement and vendor management as a bonus, aligning with the candidate's procurement skill.",
+    "term": "procurement",
+    "quote": "Familiarity with software procurement, vendor management, or SaaS spend management.",
+    "label": "insufficient",
+    "why": "'procurement' is nice-to-have, not required",
+    "evidence": "Familiarity with software procurement, vendor management, or SaaS spend management."
+   },
+   {
+    "type": "other",
+    "claim": "The posting also lists an MBA from a top-tier program as a requirement, with equivalent strategic experience accepted instead.",
+    "quote": "MBA: From a top-tier program (or equivalent strategic experience in fast-paced, high-growth companies)",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "MBA: From a top-tier program (or equivalent strategic experience in fast-paced, high-growth companies)"
+   }
+  ]
+ },
+ {
+  "id": "8368295",
+  "title": "Supply Chain Engineer",
+  "location": "Somerville, MA",
+  "url": "https://careers.formlabs.com/job/8368295/apply/?gh_jid=8368295",
+  "score": 7,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['supply chain']",
+    "evidence": "Supply Chain Engineer"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['somerville']",
+    "evidence": "Somerville, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:52:12-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a supply chain position that owns the raw-material supply chain for a resin factory, which matches the candidate's supply chain and procurement focus.",
+    "quote": "We’re looking for a technically strong Supply Chain Engineer to own the raw-material supply chain that feeds our resin factory.",
+    "label": "supported",
+    "why": "title has role word(s) ['supply chain']",
+    "evidence": "Supply Chain Engineer"
+   },
+   {
+    "type": "skill",
+    "claim": "The posting involves inventory planning work, including aligning supply with production plans and inventory targets.",
+    "term": "inventory",
+    "quote": "aligning raw-material supply with production plans, batch schedules, and inventory targets",
+    "label": "supported",
+    "why": "'inventory' named in a duty/requirement sentence",
+    "evidence": "aligning raw-material supply with production plans, batch schedules, and inventory targets"
+   },
+   {
+    "type": "skill",
+    "claim": "Advanced Excel is a stated requirement, which matches one of the candidate's listed skills.",
+    "term": "Excel",
+    "quote": "advanced Excel/Sheets required",
+    "label": "supported",
+    "why": "'Excel' named in a duty/requirement sentence",
+    "evidence": "advanced Excel/Sheets required"
+   },
+   {
+    "type": "skill",
+    "claim": "SQL is listed as a plus in the analytical skills requirement.",
+    "term": "SQL",
+    "quote": "SQL, Python, or Tableau a plus",
+    "label": "insufficient",
+    "why": "'SQL' is nice-to-have, not required",
+    "evidence": "SQL, Python, or Tableau a plus"
+   },
+   {
+    "type": "skill",
+    "claim": "SAP is named as an example of the ERP experience that earns bonus points.",
+    "term": "SAP",
+    "quote": "ERP experience (e.g., NetSuite, SAP, Oracle).",
+    "label": "insufficient",
+    "why": "'SAP' is nice-to-have, not required",
+    "evidence": "ERP experience (e.g., NetSuite, SAP, Oracle)."
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for 5+ years of manufacturing-related experience, so it sits at the top edge of the candidate's 5-years-or-less range. It also expects a chemistry or chemical engineering background.",
+    "quote": "5+ years of experience in chemical, specialty materials, polymer, coatings, adhesives, or consumer goods manufacturing",
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   }
+  ]
+ },
+ {
+  "id": "8372071",
+  "title": "Supply Chain Engineer",
+  "location": "Boston, MA",
+  "url": "https://careers.formlabs.com/job/8372071/apply/?gh_jid=8372071",
+  "score": 7,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['supply chain']",
+    "evidence": "Supply Chain Engineer"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   "experience": {
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   }
+  },
+  "verdict": {
+   "verdict": "relevant",
+   "because": []
+  },
+  "claude_asked_at": "2026-11-23T13:52:13-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a supply chain position that owns the raw-material supply chain for a resin factory, which matches the candidate's supply chain focus.",
+    "quote": "We’re looking for a technically strong Supply Chain Engineer to own the raw-material supply chain that feeds our resin factory.",
+    "label": "supported",
+    "why": "title has role word(s) ['supply chain']",
+    "evidence": "Supply Chain Engineer"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting asks for at least five years of experience, which sits at the top of the candidate's five-years-or-less range, so it may be a stretch.",
+    "quote": "5+ years of experience in chemical, specialty materials, polymer, coatings, adhesives, or consumer goods manufacturing",
+    "label": "supported",
+    "why": "largest stated figure 5 ≤ 5",
+    "evidence": "5+ years of experience"
+   },
+   {
+    "type": "skill",
+    "claim": "Advanced Excel is a stated requirement, and Excel is one of the candidate's skills.",
+    "term": "Excel",
+    "quote": "advanced Excel/Sheets required",
+    "label": "supported",
+    "why": "'Excel' named in a duty/requirement sentence",
+    "evidence": "advanced Excel/Sheets required"
+   },
+   {
+    "type": "skill",
+    "claim": "SQL is listed as a plus, and SQL is one of the candidate's skills.",
+    "term": "SQL",
+    "quote": "SQL, Python, or Tableau a plus",
+    "label": "insufficient",
+    "why": "'SQL' is nice-to-have, not required",
+    "evidence": "SQL, Python, or Tableau a plus"
+   },
+   {
+    "type": "skill",
+    "claim": "SAP is named as an example of the ERP experience the posting gives bonus points for.",
+    "term": "SAP",
+    "quote": "ERP experience (e.g., NetSuite, SAP, Oracle).",
+    "label": "insufficient",
+    "why": "'SAP' is nice-to-have, not required",
+    "evidence": "ERP experience (e.g., NetSuite, SAP, Oracle)."
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves setting inventory targets and safety stock levels, which draws on the candidate's inventory skills.",
+    "term": "inventory",
+    "quote": "aligning raw-material supply with production plans, batch schedules, and inventory targets",
+    "label": "supported",
+    "why": "'inventory' named in a duty/requirement sentence",
+    "evidence": "aligning raw-material supply with production plans, batch schedules, and inventory targets"
+   }
+  ]
+ },
+ {
+  "id": "8249069",
+  "title": "Technical Program Manager - Entry Level",
+  "location": "Boston, MA",
+  "url": "https://careers.formlabs.com/job/8249069/apply/?gh_jid=8249069",
+  "score": 4,
+  "gates": {
+   "role": {
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Technical Program Manager - Entry Level"
+   },
+   "location": {
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   "experience": {
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   }
+  },
+  "verdict": {
+   "verdict": "I cannot tell",
+   "because": [
+    "experience"
+   ]
+  },
+  "claude_asked_at": "2026-11-23T13:52:16-05:00",
+  "claude_parsed": true,
+  "claims": [
+   {
+    "type": "role",
+    "claim": "The role is a project management position, which matches the candidate's interest in project/product manager roles.",
+    "quote": "Technical Program Managers at Formlabs are project managers who usher new technology from concept through production",
+    "label": "supported",
+    "why": "title has role word(s) ['program manager']",
+    "evidence": "Technical Program Manager - Entry Level"
+   },
+   {
+    "type": "location",
+    "claim": "The role is in-person in Somerville, MA, which is in the Boston area.",
+    "quote": "This is an in-person role based in Somerville, MA.",
+    "label": "supported",
+    "why": "location field matches ['boston']",
+    "evidence": "Boston, MA"
+   },
+   {
+    "type": "experience",
+    "claim": "The posting is labeled entry level, which fits a candidate with 5 years of experience or less.",
+    "quote": "Technical Program Manager - Entry Level",
+    "label": "insufficient",
+    "why": "the posting states no years-of-experience figure",
+    "evidence": ""
+   },
+   {
+    "type": "skill",
+    "claim": "The role involves working with supply chain personnel, which draws on the candidate's supply chain background.",
+    "term": "supply chain",
+    "quote": "Have the ability to work cross-functionally between product, engineering, production, and supply chain personnel.",
+    "label": "insufficient",
+    "why": "'supply chain' names people the job works with, not a skill it uses",
+    "evidence": "Have the ability to work cross-functionally between product, engineering, production, and supply chain personnel."
+   },
+   {
+    "type": "other",
+    "claim": "The role calls for program tools covering resource planning, cost tracking, and production planning, which relate to the candidate's planning and operations analysis work.",
+    "quote": "Demonstrated experience creating and implementing program management tools for communication, scheduling, risk management, resource planning, cost tracking, and production planning, etc.",
+    "label": "insufficient",
+    "why": "quote is verbatim, but this claim type has no entailment rule; needs a hand label",
+    "evidence": "Demonstrated experience creating and implementing program management tools for communication, scheduling, risk management, resource planning, cost tracking, and production planning, etc."
+   }
+  ]
+ }
+]

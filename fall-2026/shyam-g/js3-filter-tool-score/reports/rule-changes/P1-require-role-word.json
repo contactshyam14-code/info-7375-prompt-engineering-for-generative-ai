@@ -1,0 +1,55 @@
+{
+ "patch": {
+  "require_role_word": true
+ },
+ "base_version": "1.0.0",
+ "changed_decisions": [
+  {
+   "id": "8239336",
+   "title": "Finance Systems Engineer",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:no_role_word"
+  },
+  {
+   "id": "8319517",
+   "title": "Product Startup Founder",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:no_role_word"
+  },
+  {
+   "id": "8212123",
+   "title": "Startup Founder",
+   "location": "Boston, MA",
+   "before": "keep:score",
+   "after": "reject:no_role_word"
+  },
+  {
+   "id": "8261373",
+   "title": "Startup Founder",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:no_role_word"
+  },
+  {
+   "id": "8261337",
+   "title": "Startup Founder",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:no_role_word"
+  }
+ ],
+ "agreement_before": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.7758620689655172,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ },
+ "agreement_after": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.8620689655172413,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ }
+}

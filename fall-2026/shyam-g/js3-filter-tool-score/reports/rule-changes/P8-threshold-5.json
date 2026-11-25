@@ -1,0 +1,48 @@
+{
+ "patch": {
+  "threshold": 5
+ },
+ "base_version": "1.2.0",
+ "changed_decisions": [
+  {
+   "id": "8334912",
+   "title": "Materials Program Manager",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:score"
+  },
+  {
+   "id": "8335124",
+   "title": "Materials Program Manager",
+   "location": "Boston, MA",
+   "before": "keep:score",
+   "after": "reject:score"
+  },
+  {
+   "id": "8335610",
+   "title": "Mechanical Project Manager",
+   "location": "Boston, MA",
+   "before": "keep:score",
+   "after": "reject:score"
+  },
+  {
+   "id": "8249069",
+   "title": "Technical Program Manager - Entry Level",
+   "location": "Boston, MA",
+   "before": "keep:score",
+   "after": "reject:score"
+  }
+ ],
+ "agreement_before": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.8620689655172413,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ },
+ "agreement_after": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.9137931034482759,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ }
+}

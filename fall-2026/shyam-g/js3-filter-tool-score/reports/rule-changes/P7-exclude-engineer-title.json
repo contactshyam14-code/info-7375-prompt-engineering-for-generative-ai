@@ -1,0 +1,38 @@
+{
+ "patch": {
+  "title_exclude": {
+   "add": [
+    "engineer"
+   ]
+  }
+ },
+ "base_version": "1.2.0",
+ "changed_decisions": [
+  {
+   "id": "8368295",
+   "title": "Supply Chain Engineer",
+   "location": "Somerville, MA",
+   "before": "keep:score",
+   "after": "reject:seniority_title"
+  },
+  {
+   "id": "8372071",
+   "title": "Supply Chain Engineer",
+   "location": "Boston, MA",
+   "before": "keep:score",
+   "after": "reject:seniority_title"
+  }
+ ],
+ "agreement_before": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.8620689655172413,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ },
+ "agreement_after": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.896551724137931,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ }
+}

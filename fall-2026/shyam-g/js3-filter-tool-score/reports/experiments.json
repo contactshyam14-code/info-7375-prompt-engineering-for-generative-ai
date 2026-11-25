@@ -1,0 +1,228 @@
+{
+ "filter": {
+  "E0 baseline: FILTER.md v1.2.0": {
+   "dev": {
+    "n": 10,
+    "correct": 6,
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "invalid_or_missing": 0,
+    "pred": {
+     "7684675": false,
+     "8327414": false,
+     "8161780": false,
+     "8241540": false,
+     "8167038": false,
+     "8330945": false,
+     "8331435": false,
+     "8241532": false,
+     "8089674": false,
+     "8318323": false
+    }
+   },
+   "heldout": {
+    "n": 10,
+    "correct": 8,
+    "tp": 2,
+    "fp": 0,
+    "fn": 2,
+    "invalid_or_missing": 0,
+    "pred": {
+     "8311099": true,
+     "8281689": false,
+     "8335610": true,
+     "8220243": false,
+     "8214451": false,
+     "7984685": false,
+     "8333766": false,
+     "8261337": false,
+     "8241508": false,
+     "8249058": false
+    }
+   }
+  },
+  "E1 filter file: FILTER.md v1.0.0 (85730d3) instead of v1.2.0": {
+   "dev": {
+    "n": 10,
+    "correct": 6,
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "invalid_or_missing": 0,
+    "pred": {
+     "7684675": false,
+     "8327414": false,
+     "8161780": false,
+     "8241540": false,
+     "8167038": false,
+     "8330945": false,
+     "8331435": false,
+     "8241532": false,
+     "8089674": false,
+     "8318323": false
+    }
+   },
+   "heldout": {
+    "n": 10,
+    "correct": 7,
+    "tp": 2,
+    "fp": 1,
+    "fn": 2,
+    "invalid_or_missing": 0,
+    "pred": {
+     "8311099": true,
+     "8281689": false,
+     "8335610": true,
+     "8220243": false,
+     "8214451": false,
+     "7984685": false,
+     "8333766": false,
+     "8261337": true,
+     "8241508": false,
+     "8249058": false
+    }
+   }
+  },
+  "E2 setting: threshold 4 -> 3 (else v1.2.0)": {
+   "dev": {
+    "n": 10,
+    "correct": 6,
+    "tp": 0,
+    "fp": 0,
+    "fn": 4,
+    "invalid_or_missing": 0,
+    "pred": {
+     "7684675": false,
+     "8327414": false,
+     "8161780": false,
+     "8241540": false,
+     "8167038": false,
+     "8330945": false,
+     "8331435": false,
+     "8241532": false,
+     "8089674": false,
+     "8318323": false
+    }
+   },
+   "heldout": {
+    "n": 10,
+    "correct": 10,
+    "tp": 4,
+    "fp": 0,
+    "fn": 0,
+    "invalid_or_missing": 0,
+    "pred": {
+     "8311099": true,
+     "8281689": true,
+     "8335610": true,
+     "8220243": false,
+     "8214451": false,
+     "7984685": false,
+     "8333766": true,
+     "8261337": false,
+     "8241508": false,
+     "8249058": false
+    }
+   }
+  }
+ },
+ "claude": {
+  "E3_prompt_A": {
+   "n": 10,
+   "correct": 7,
+   "tp": 1,
+   "fp": 0,
+   "fn": 3,
+   "invalid_or_missing": 0,
+   "pred": {
+    "8311099": true,
+    "8281689": false,
+    "8335610": false,
+    "8220243": false,
+    "8214451": false,
+    "7984685": false,
+    "8333766": false,
+    "8261337": false,
+    "8241508": false,
+    "8249058": false
+   },
+   "asked": [
+    "2026-11-23T13:56:45-05:00",
+    "2026-11-23T13:57:01-05:00"
+   ]
+  },
+  "E3_prompt_B": {
+   "n": 10,
+   "correct": 10,
+   "tp": 4,
+   "fp": 0,
+   "fn": 0,
+   "invalid_or_missing": 0,
+   "pred": {
+    "8311099": true,
+    "8281689": true,
+    "8335610": true,
+    "8220243": false,
+    "8214451": false,
+    "7984685": false,
+    "8333766": true,
+    "8261337": false,
+    "8241508": false,
+    "8249058": false
+   },
+   "asked": [
+    "2026-11-23T13:57:03-05:00",
+    "2026-11-23T13:57:18-05:00"
+   ]
+  },
+  "E4_context_title_only": {
+   "n": 10,
+   "correct": 7,
+   "tp": 1,
+   "fp": 0,
+   "fn": 3,
+   "invalid_or_missing": 0,
+   "pred": {
+    "8311099": true,
+    "8281689": false,
+    "8335610": false,
+    "8220243": false,
+    "8214451": false,
+    "7984685": false,
+    "8333766": false,
+    "8261337": false,
+    "8241508": false,
+    "8249058": false
+   },
+   "asked": [
+    "2026-11-23T13:57:21-05:00",
+    "2026-11-23T13:57:38-05:00"
+   ]
+  },
+  "E5_tools_score_posting": {
+   "n": 10,
+   "correct": 7,
+   "tp": 1,
+   "fp": 0,
+   "fn": 3,
+   "invalid_or_missing": 0,
+   "pred": {
+    "8311099": true,
+    "8281689": false,
+    "8335610": false,
+    "8220243": false,
+    "8214451": false,
+    "7984685": false,
+    "8333766": false,
+    "8261337": false,
+    "8241508": false,
+    "8249058": false
+   },
+   "asked": [
+    "2026-11-23T13:57:38-05:00",
+    "2026-11-23T13:57:56-05:00"
+   ]
+  }
+ }
+}

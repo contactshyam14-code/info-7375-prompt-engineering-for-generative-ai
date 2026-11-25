@@ -1,0 +1,13 @@
+got 8334912 Materials Program Manager
+got 8074475 FP&A Analyst
+got 8281472 Global Sourcing Manager
+got 8249635 Fulfillment Coordinator - May 2027 Graduates
+got 8335124 Materials Program Manager
+got 8311099 Strategy & Operations Analyst
+got 8103603 NPI Operations Program Manager
+got 8335610 Mechanical Project Manager
+got 8368295 Supply Chain Engineer
+got 8372071 Supply Chain Engineer
+got 8249069 Technical Program Manager - Entry Level
+wrote reports/SHORTLIST.md (11 postings)
+exit=0

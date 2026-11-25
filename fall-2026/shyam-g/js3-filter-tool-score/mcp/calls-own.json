@@ -1,0 +1,9 @@
+[
+ {"name": "score_posting", "arguments": {"posting_id": "8249069"}},
+ {"name": "score_posting", "arguments": {"title": "Demand Planner", "location": "", "content": "Own the S&OP forecast. 3+ years of experience with SAP and Excel."}},
+ {"name": "score_posting", "arguments": {"posting_id": "../../persona/jordan_rivera.json"}},
+ {"name": "score_posting", "arguments": {"posting_id": "8249069", "write_to": "C:/Windows/x.txt"}},
+ {"name": "apply_to_job", "arguments": {"posting_id": "8249069"}},
+ {"method": "resources/list", "params": {}},
+ {"method": "ping", "params": {}}
+]

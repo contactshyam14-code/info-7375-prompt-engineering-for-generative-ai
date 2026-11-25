@@ -1,0 +1,17 @@
+{
+ "patch": {},
+ "base_version": "1.2.0",
+ "changed_decisions": [],
+ "agreement_before": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.8620689655172413,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ },
+ "agreement_after": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.8620689655172413,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ }
+}

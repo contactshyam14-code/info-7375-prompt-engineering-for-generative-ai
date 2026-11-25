@@ -1,0 +1,48 @@
+{
+ "patch": {
+  "threshold": 3
+ },
+ "base_version": "1.0.0",
+ "changed_decisions": [
+  {
+   "id": "7391183",
+   "title": "Operational Excellence Lead",
+   "location": "Boston, MA",
+   "before": "reject:score",
+   "after": "keep:score"
+  },
+  {
+   "id": "7391184",
+   "title": "Operational Excellence Lead",
+   "location": "Somerville, MA",
+   "before": "reject:score",
+   "after": "keep:score"
+  },
+  {
+   "id": "8333766",
+   "title": "Product Manager, Hardware",
+   "location": "Somerville, MA",
+   "before": "reject:score",
+   "after": "keep:score"
+  },
+  {
+   "id": "8281689",
+   "title": "Product Manager, Software",
+   "location": "Somerville, MA",
+   "before": "reject:score",
+   "after": "keep:score"
+  }
+ ],
+ "agreement_before": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.7758620689655172,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ },
+ "agreement_after": {
+  "js1_dev": 0.6,
+  "audit_hand": 0.7758620689655172,
+  "js1_dev_n": 10,
+  "audit_hand_n": 58
+ }
+}

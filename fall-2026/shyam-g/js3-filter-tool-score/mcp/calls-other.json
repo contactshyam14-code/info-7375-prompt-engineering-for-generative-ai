@@ -1,0 +1,6 @@
+[
+ {"name": "Read", "arguments": {"file_path": "C:/Users/Shyam/JOB_Agent/js3-filter-tool-score/FILTER.md", "limit": 3}},
+ {"name": "Read", "arguments": {"file_path": "C:/Windows/win.ini", "limit": 3}},
+ {"name": "Glob", "arguments": {"pattern": "*.md"}},
+ {"name": "NoSuchTool", "arguments": {}}
+]
